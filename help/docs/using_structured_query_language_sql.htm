@@ -1,0 +1,158 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Using Structured Query Language (SQL)</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="console panel,panel,panel console,scripts,sql,structured query language" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Using_Structured_Query_Language_SQL" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?using_structured_query_language_sql.htm"; }
+  else { parent.quicksync('a10.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Using Structured Query Language (SQL)</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="opening_saving_and_running_scr.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="installing_extensions.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="using_scripts_and_extensions.htm">Using Scripts, SQL and Extensions</a> &gt; Using Structured Query Language (SQL)</p>
+<p>&nbsp;</p>
+<p>The scripting language offers the ability to use Structured Query Language (SQL) syntax to query your data. &nbsp;This can be done via a <a href="opening_saving_and_running_scr.htm">script</a> or, alternatively, by entering SQL statements directly in the Console Panel.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Console Panel</span></p>
+<p>&nbsp;</p>
+<p>To open the Console Panel, select View &gt; Console Panel or select CTRL+K:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="console_panel.png" width="546" height="149" border="0" alt="console_panel" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>The console can be used for both input and output:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Input SQL statements to query a database (internal or external)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Input console commands</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Show output from a script </span></td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Using SQL Statements</span></p>
+<p>&nbsp;</p>
+<p>SQL is the standard language for querying databases. &nbsp;Many of these same processes can be performed in Tabular IQ via the interface. &nbsp;However, for those who know SQL syntax, it is often useful to be able to just query directly from a prompt. &nbsp;To do so, open the Console Panel and enter in a SQL statement.</p>
+<p>&nbsp;</p>
+<p>It is important to use the full path of the table name for both internal and external databases as seen in the <a href="using_the_project_tree.htm">Project Panel</a>. &nbsp;If the SQL statement references an internal table, the SQL will use the software's internal SQL syntax. &nbsp;If the SQL statement references an externally connected table, the SQL statement is passed through to the database containing that table and must use the SQL syntax of the database in question.</p>
+<p>&nbsp;</p>
+<p>So, if we had a folder called "data" with a table called "sample", we could type in:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">select&nbsp;*&nbsp;from&nbsp;/data/sample;</span></p>
+<p>&nbsp;</p>
+<p>Likewise, if we had an external database connection called "connection" with a table called "sample", we could type in:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">select&nbsp;*&nbsp;from&nbsp;/connection/sample;</span></p>
+<p>&nbsp;</p>
+<p>If the table name contained a space and was called "sample table", we would use the following syntax</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">select&nbsp;*&nbsp;from&nbsp;[/connection/sample&nbsp;table];</span></p>
+<p>&nbsp;</p>
+<p>An example of a more advanced SQL statement might be:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">select&nbsp;myfield,&nbsp;count(*)&nbsp;from&nbsp;[/data/sample&nbsp;table]&nbsp;group&nbsp;by&nbsp;myfield;</span></p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;The Console Panel accepts single line SQL Statements only.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Using Console Commands</span></p>
+<p>&nbsp;</p>
+<p>In addition to SQL, the console enables you to enter various functions to help speed up your processing from the command-line:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">OPEN &lt;filename&gt;:</span><span class="f_Bullets"> Opens a given file</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">CLOSE &lt;filename&gt;:</span><span class="f_Bullets"> Closes a given file</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">USE &lt;directory path&gt;:</span><span class="f_Bullets"> Changes the default directory used to run SQL Statements</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">PWD:</span><span class="f_Bullets"> Prints the current directory that's being used for SQL Statements</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">CLEAR:</span><span class="f_Bullets"> Clears the Console of all text</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">EXIT:</span><span class="f_Bullets"> Exit the software</span></td></tr></table></div><p>&nbsp;</p>
+<p>So, if we wanted to open a table called "data", we could type in:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">open&nbsp;data</span></p>
+<p>&nbsp;</p>
+<p>Likewise, if we had a folder called "data" with a table called "sample", we could type in:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">open&nbsp;/data/sample;</span></p>
+<p>&nbsp;</p>
+<p>If we wanted to use a SQL Select statement on a table called "data" in an external database called "connection", we could either write the SQL Statement in full: </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">select&nbsp;*&nbsp;from&nbsp;/connection/data;</span></p>
+<p>&nbsp;</p>
+<p>or we could use the commands to switch directories for us, enter the sql command and go back to our root folder:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">pwd; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[shows&nbsp;what&nbsp;the&nbsp;current&nbsp;directory&nbsp;is]</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">use&nbsp;connection; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[sets&nbsp;directory&nbsp;to&nbsp;"connection"]</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">select&nbsp;*&nbsp;from&nbsp;data; &nbsp; &nbsp; &nbsp; &nbsp;[executes&nbsp;a&nbsp;SQL&nbsp;statement&nbsp;on&nbsp;the&nbsp;table&nbsp;"data"&nbsp;in&nbsp;the&nbsp;"connection"&nbsp;directory]</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">use; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[reverts&nbsp;back&nbsp;to&nbsp;root&nbsp;project&nbsp;folder]</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">pwd; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[shows&nbsp;that&nbsp;the&nbsp;current&nbsp;directory&nbsp;is&nbsp;the&nbsp;root&nbsp;project&nbsp;folder]</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Outputting Script Results</span></p>
+<p>&nbsp;</p>
+<p>The Console Panel can also be used for outputting information from a script. &nbsp; There are several functions for this, including:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Console.write();</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Console.writeLine();</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Console.clear();</span>&nbsp;</p>
+<p>&nbsp;</p>
+<p>For example:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">//&nbsp;count&nbsp;to&nbsp;three&nbsp;on&nbsp;the&nbsp;same&nbsp;line</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Console.write("Count&nbsp;to&nbsp;Three:&nbsp;");</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">for&nbsp;(var&nbsp;i&nbsp;=&nbsp;1;&nbsp;i&nbsp;&lt;=&nbsp;3;&nbsp;++i)</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">{</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;text&nbsp;=&nbsp;"";</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(i&nbsp;&gt;&nbsp;1)</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;+=&nbsp;",&nbsp;";</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;+=&nbsp;i;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;&nbsp;&nbsp;&nbsp;Console.write(text);</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">}</span></p>
+<p>&nbsp;</p>
+<p>This would output the following to the Console:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Count&nbsp;to&nbsp;Three:&nbsp;1,&nbsp;2,&nbsp;3</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

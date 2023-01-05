@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Defining the Contents of a Calculated Field</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="create calculations,field name,field type,field width,formulas,insert calculated fields" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Defining_the_Contents_of_a_Cal" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?defining_the_contents_of_a_cal.htm"; }
+  else { parent.quicksync('a5.9.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Defining the Contents of a Calculated Field</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="creating_and_managing_calculat.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="using_formulas_to_create_calcu.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="performing_standard_data_opera.htm">Performing Standard Data Operations</a> &gt; <a href="creating_calculations.htm">Creating Calculations</a> &gt; Defining the Contents of a Calculated Field</p>
+<p>&nbsp;</p>
+<p>When you <a href="creating_and_managing_calculat.htm">create a calculated field</a>, a formula builder will open. &nbsp;The <a href="using_the_formula_builder.htm">formula builder</a> is the dialog where you specify the actual formula, as well as other field definitions, such as field name and type.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="calculated_field.png" width="489" height="375" border="0" alt="calculated_field" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Field Name</span></p>
+<p>&nbsp;</p>
+<p>When you create or edit a calculated field, you can change the field name using the "Name" text box at the top left of the dialog. &nbsp;In addition to the dynamic nature of the calculation, the field name also changes in the table as you type. &nbsp;In the example above, the calculated field name is "Total."</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Field Type</span></p>
+<p>&nbsp;</p>
+<p>As with standard fields, calculated fields also need to have a <a href="types_of_formulas.htm">data type</a> associated with them. &nbsp;A data type is automatically generated depending on the formula that you use. &nbsp;This automatic setting is signified by the word "Auto" in the "Type" drop-down box on the top of the dialog. &nbsp;However, you may also change the type setting manually if you wish. &nbsp;This is usually not necessary for normal use; however, it is important to have in certain circumstances, particularly when interacting with external database systems. &nbsp;Click on the drop-down menu and select from the following types:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Character - This is a standard character type.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Wide Character - This is a character type, most often used with unicode characters.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Numeric - This is a standard numeric type, which will provide a precise decimal place. &nbsp;For the number 1.234, if you choose 2 decimal places, the number will be saved as 1.23; the remaining decimal place will not be able to be retrieved again.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Double - This is a numeric type, which is more flexible. &nbsp;For the number 1.234, if you choose 2 decimal places, the number will be shown as 1.23; however, if you change the decimal precision to 3, the number 1.234 will again be displayed.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Integer - This is a numeric type that has no decimal places.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Date - This is a date type that only shows the date values.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Datetime - This is date type that shows both date and time values.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Boolean - This is a logical true/false condition.</span></td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Field Width and Decimal Precision</span></p>
+<p>&nbsp;</p>
+<p>The field width default is set to 30 characters for character and date types, 18 characters and 2 decimal places for numeric types, and 1 character for Boolean types.</p>
+<p>&nbsp;</p>
+<p>However, you can edit these values to any number you wish to choose by clicking on the "Width" and "Decimal" text boxes and changing the value, either by manually typing in the new number or by using the arrows to increase or decrease the number.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Formula Box</span></p>
+<p>&nbsp;</p>
+<p>The formula box is the place where you enter your formula. &nbsp;You can type the formula in directly or you can also double-click on the helper items, such as the function names, field names and operators located underneath the formula box.  <span class="f_Bullets"><a href="using_formulas_to_create_calcu.htm">Click here for further information on using formulas.</a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Formula Builder Help</span> </p>
+<p>&nbsp;</p>
+<p>The formula builder also has some built-in functionality to help you build your formulas:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Function Names</span><span class="f_Bullets">: The functions available for building formulas. &nbsp;You may double-click on a function and it will appear in the formula box. &nbsp;Additionally, when you click on the formula, the syntax will appear at the bottom left of the formula builder. &nbsp;For help using the function, click the "More..." hyperlink, which will take you to a web help page with further information.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Field Names</span><span class="f_Bullets">: The fields available within your data set for building formulas. &nbsp;You may double-click on a field and it will appear in the formula box.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Operators</span><span class="f_Bullets">: The mathematical operators available for building formulas. &nbsp;You may double-click on an operator and it will appear in the formula box.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Formula Validator</span><span class="f_Bullets">: &nbsp;The formula validator is the box at the bottom right of the formula box that shows a green check mark to show that a formula has valid syntax or a red "X" to show that the formula has an invalid syntax. &nbsp;Additionally, if the formula is valid, this box will also show the data type that has been associated with this calculated field (i.e., Character, Numeric, or Boolean).</span></td></tr></table></div><p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

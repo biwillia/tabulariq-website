@@ -1,0 +1,313 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Working with Sorts and Groups</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="group footer,group header,reports,reports groups" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Working_with_Groups" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?working_with_groups.htm"; }
+  else { parent.quicksync('a8.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Working with Sorts and Groups</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="using_report_settings.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="working_in_the_design_view.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="designing_and_printing_reports.htm">Designing and Printing Reports</a> &gt; Working with Sorts and Groups</p>
+<p>&nbsp;</p>
+<p>When creating more complex reports, you often will need to sort various fields and/or group like-data together. &nbsp;For instance, if your data includes a date, you may want to sort it so that the earliest date shows first in the report. &nbsp;Or, if you wanted to show a customer list by country, instead of listing the country name on each detail record, you could simply group on the country name so it only appears once -- with all the detail related to that country following in the detail section.</p>
+<p>&nbsp;</p>
+<p>You can set up your sorts and group in the bottom section of the <a href="using_report_settings.htm">Report Settings Dialog</a>.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="report_settings.png" width="390" height="360" border="0" alt="report_settings" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Sorting Fields</span></p>
+<p>&nbsp;</p>
+<p>To sort a field in your report, you simply need to enter your field in the Field Name section, select the sort direction you want (ascending or descending) and then make sure the header, footer and page break check boxes are unchecked (these are used for groups; see below). &nbsp;Click the OK button and toggle to the <a href="working_in_the_layout_view.htm">Layout View</a> and your report will be sorted accordingly.  </p>
+<p>&nbsp;</p>
+<p><span class="f_Bullets">For example, if you grouped on a field of animal names and sorted ascending, the group of "aardvarks" would be first in the report and the group of "zebras" would be last in the report.  </span>You may also sort on multiple fields in this dialog. &nbsp;The first field in the list will be sorted first, the second field will be sorted second and so on.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Grouping Controls</span></p>
+<p>&nbsp;</p>
+<p>Before walking through a grouping example, first we'll look at the controls that define how your data is grouped and sorted:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Field Name:</span><span class="f_Bullets"> &nbsp;Click on a row under the Field Name header and a drop-down box will appear with the available fields from your Source Table. &nbsp;Select the field you want to create your group on.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Sort Direction:</span><span class="f_Bullets"> Once you select a group, you can choose to sort it ascending or descending as discussed above.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Group Header:</span><span class="f_Bullets"> &nbsp;Checking this box will provide a header area in the <a href="working_in_the_design_view.htm">Design View</a> where you can add group information, like group name.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Group Footer:</span><span class="f_Bullets"> &nbsp;Checking this box will provide a footer area in the <a href="working_in_the_design_view.htm">Design View</a> where you can add group information, like group subtotals.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Page Break:</span><span class="f_Bullets"> Checking this box will cause the report to add a page break after your group has been completed. &nbsp;This is helpful if you wish to start a new page for each group.</span></td></tr></table></div><p>&nbsp;</p>
+<p>You are required to place your groups in the desired order in the settings dialog. &nbsp;The group on the first row will be grouped first, then the second row and so on. &nbsp;This is particularly important because the second group inherits properties of the first group and the third group inherits properties of the second group, etc.  </p>
+<p>&nbsp;</p>
+<p>As an example, if we have two groups, Country and City, and set a Page Break to break after each City group, we would expect that a new page would begin every time a new City group appeared. &nbsp;However, the City, in this case, inherits from the Country. &nbsp;So, if we had two groups: "USA, Dublin" and "Ireland, Dublin" the page break would also occur in between these two groups, even though the City is the same for each group. &nbsp;This is because "Dublin, USA" is a different group than "Dublin Ireland".</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Report Grouping Example</span></p>
+<p>&nbsp;</p>
+<p>To help clarify the grouping functionality, we'll look at an example using a table of sample customer data:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p><span style="font-weight: bold;">Customer</span></p>
+</td>
+<td valign="top"><p><span style="font-weight: bold;">City</span></p>
+</td>
+<td valign="top"><p><span style="font-weight: bold;">State</span></p>
+</td>
+<td valign="top"><p><span style="font-weight: bold;">Country</span></p>
+</td>
+<td valign="top"><p><span style="font-weight: bold;">Total</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>CORMIN</p>
+</td>
+<td valign="top"><p>New York</p>
+</td>
+<td valign="top"><p>NY</p>
+</td>
+<td valign="top"><p>USA</p>
+</td>
+<td valign="top"><p>10000</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>ROGEN</p>
+</td>
+<td valign="top"><p>Chicago</p>
+</td>
+<td valign="top"><p>IL</p>
+</td>
+<td valign="top"><p>USA</p>
+</td>
+<td valign="top"><p>20000</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>BAKER'S FRIEND</p>
+</td>
+<td valign="top"><p>Vancouver</p>
+</td>
+<td valign="top"><p>BC</p>
+</td>
+<td valign="top"><p>CANADA</p>
+</td>
+<td valign="top"><p>13000</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>SUNNY DAY FOODS</p>
+</td>
+<td valign="top"><p>Elmhurst</p>
+</td>
+<td valign="top"><p>IL</p>
+</td>
+<td valign="top"><p>USA</p>
+</td>
+<td valign="top"><p>14000</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>BOISE FIELDS</p>
+</td>
+<td valign="top"><p>Albany</p>
+</td>
+<td valign="top"><p>NY</p>
+</td>
+<td valign="top"><p>USA</p>
+</td>
+<td valign="top"><p>32000</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>JAYVIS BROS</p>
+</td>
+<td valign="top"><p>Toronto</p>
+</td>
+<td valign="top"><p>ON</p>
+</td>
+<td valign="top"><p>CANADA</p>
+</td>
+<td valign="top"><p>47000</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>AMANNA BANANA</p>
+</td>
+<td valign="top"><p>New York</p>
+</td>
+<td valign="top"><p>NY</p>
+</td>
+<td valign="top"><p>USA</p>
+</td>
+<td valign="top"><p>28000</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>RED RABBIT</p>
+</td>
+<td valign="top"><p>Chicago</p>
+</td>
+<td valign="top"><p>IL</p>
+</td>
+<td valign="top"><p>USA</p>
+</td>
+<td valign="top"><p>34500</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>GUNDY BRANDS</p>
+</td>
+<td valign="top"><p>Albany</p>
+</td>
+<td valign="top"><p>NY</p>
+</td>
+<td valign="top"><p>USA</p>
+</td>
+<td valign="top"><p>7000</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>FLYING PIZZA</p>
+</td>
+<td valign="top"><p>Chicago</p>
+</td>
+<td valign="top"><p>IL</p>
+</td>
+<td valign="top"><p>USA</p>
+</td>
+<td valign="top"><p>33500</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>SOLTRAM SWEETS</p>
+</td>
+<td valign="top"><p>Vancouver</p>
+</td>
+<td valign="top"><p>BC</p>
+</td>
+<td valign="top"><p>CANADA</p>
+</td>
+<td valign="top"><p>12000</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p>PARSEN'S</p>
+</td>
+<td valign="top"><p>Elmhurst</p>
+</td>
+<td valign="top"><p>NY</p>
+</td>
+<td valign="top"><p>USA</p>
+</td>
+<td valign="top"><p>5000</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>We can see various groups within this data, such as:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Customers per Country (9 in the USA; 3 in Canada)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Customers per Country and State/Province (5 in NY, USA; 4 in IL, USA; 2 in BC, Canada; 1 in ON, Canada)</span></td></tr></table></div><p>&nbsp;</p>
+<p>So, let's say that we wanted to create a report that shows Customer name and Totals, broken out by City. &nbsp;We'll want to see a basic recurring pattern in our report that looks like this:</p>
+<p>&nbsp;</p>
+<p>City Name  <span style="font-style: italic;">[GROUP HEADER]</span></p>
+<p>&gt;&gt;Company Name and Total  <span style="font-style: italic;">[DETAIL]</span></p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&nbsp;</p>
+<p>City Name</p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&nbsp;</p>
+<p>To do this, we need to create a group based on the City. &nbsp;However, we see that there are two cities in our data called Elmhurst -- one is in the state of New York and the other is in the state of Illinois. &nbsp;Therefore, if we are going to group on cities, we need to be careful to also use the State when defining our group.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="report_group1.png" width="372" height="88" border="0" alt="report_group1" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>In the screenshot above, we group on both State and City. &nbsp;However, we only need to show a Group Header for the City, since we are not breaking out the report by groups of States too. &nbsp;Then in the Design View, we would add the field "City" to the Group Header section and the fields "Company" and "Total" to the Detail section.</p>
+<p>&nbsp;</p>
+<p>If we wanted to instead break out the report not only by City, but also by Country, we would define the groups as follows:</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="report_group2.png" width="372" height="88" border="0" alt="report_group2" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>In this example, we group on Country, State and City. &nbsp;We'll continue to show a City Group Header, but we'll also add a Country Group Header and Country Footer to this report. &nbsp;It will follow this recurring pattern:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Country Name &nbsp; <span style="font-style: italic;">[GROUP HEADER]</span></p>
+<p>&nbsp;</p>
+<p>&gt;City Name &nbsp; <span style="font-style: italic;">[GROUP HEADER]</span></p>
+<p>&gt;&gt;Company Name and Total &nbsp; <span style="font-style: italic;">[DETAIL]</span></p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&nbsp;</p>
+<p>&gt;City Name</p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&nbsp;</p>
+<p>Total per Country  <span style="font-style: italic;">[GROUP FOOTER]</span></p>
+<p>&nbsp;</p>
+<p>Country Name</p>
+<p>&nbsp;</p>
+<p>&gt;City Name</p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&nbsp;</p>
+<p>&gt;City Name</p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&gt;&gt;Company Name and Total</p>
+<p>&nbsp;</p>
+<p>Total per Country (Group Footer)</p>
+<p>&nbsp;</p>
+<p>Here we are not just providing a list of Cities and related Companies, but we are dividing the report by Country as well. &nbsp;In addition, we've included a Country Group Footer, where we are able to define subtotals. &nbsp;In this case, we would create a subtotal per Country. &nbsp;If we checked the Page Break box next to the Country group in the Report Settings, each time a new country appeared in the report, the new group would begin on a new page.  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Learn More</span></p>
+<p>&nbsp;</p>
+<p>For further information regarding using groups in a report, see the following sections:</p>
+<p>&nbsp;</p>
+<p class="p_Bullets"><span class="f_Bullets"><a href="working_in_the_design_view.htm">Working in the Design View</a></span></p>
+<p class="p_Bullets"><span class="f_Bullets"><a href="working_in_the_layout_view.htm">Working in the Layout View</a></span></p>
+<p class="p_Bullets"><span class="f_Bullets"><a href="formatting_a_report.htm">Formatting a Report</a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

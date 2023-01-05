@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../fileadmin/css/layout24c1.css?1317071582" media="all" />
+<link rel="stylesheet" type="text/css" href="../fileadmin/css/googlesearch24c1.css?1317071582" media="all" />
+<link rel="stylesheet" type="text/css" href="../typo3conf/ext/rgmedialinks/res/mediaboxb6f4.css?1317071595" media="all" />
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+/*TSFEinlineStyle*/
+/* default styles for extension "tx_thmailformplus_pi1" */
+  .tx-thmailformplus-pi1 H2 { margin-top: 0px; margin-bottom: 0px; }
+-->
+/*]]>*/
+</style>
+
+
+<script src="../fileadmin/js/swfobject24c1.js?1317071582" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+<!--
+/*_scriptCode*/
+
+		var browserName = navigator.appName;
+		var browserVer = parseInt(navigator.appVersion);
+		var version = "";
+		var msie4 = (browserName == "Microsoft Internet Explorer" && browserVer >= 4);
+		if ((browserName == "Netscape" && browserVer >= 3) || msie4 || browserName=="Konqueror" || browserName=="Opera") {version = "n3";} else {version = "n2";}
+			// Blurring links:
+		function blurLink(theObject)	{	//
+			if (msie4)	{theObject.blur();}
+		}
+
+			// decrypt helper function
+		function decryptCharcode(n,start,end,offset)	{
+			n = n + offset;
+			if (offset > 0 && n > end)	{
+				n = start + (n - end - 1);
+			} else if (offset < 0 && n < start)	{
+				n = end - (start - n - 1);
+			}
+			return String.fromCharCode(n);
+		}
+			// decrypt string
+		function decryptString(enc,offset)	{
+			var dec = "";
+			var len = enc.length;
+			for(var i=0; i < len; i++)	{
+				var n = enc.charCodeAt(i);
+				if (n >= 0x2B && n <= 0x3A)	{
+					dec += decryptCharcode(n,0x2B,0x3A,offset);	// 0-9 . , - + / :
+				} else if (n >= 0x40 && n <= 0x5A)	{
+					dec += decryptCharcode(n,0x40,0x5A,offset);	// A-Z @
+				} else if (n >= 0x61 && n <= 0x7A)	{
+					dec += decryptCharcode(n,0x61,0x7A,offset);	// a-z
+				} else {
+					dec += enc.charAt(i);
+				}
+			}
+			return dec;
+		}
+			// decrypt spam-protected emails
+		function linkTo_UnCryptMailto(s)	{
+			location.href = decryptString(s,2);
+		}
+
+
+// -->
+/*]]>*/
+</script>
+
+<link rel="shortcut icon" href="../favicon.png" />
+	<title>Installation</title>
+	<meta name="title" content="Installation" />
+	<meta name="date" content="2019-03-22" />
+
+<script type="text/javascript" src="../typo3conf/ext/t3mootools/res/mootoolsv1.11.js"></script>
+<script type="text/javascript" src="../fileadmin/js/menus.js"></script>
+<script type="text/javascript" src="../typo3conf/ext/rgmedialinks/res/mediabox.js"></script>
+</head>
+<body>
+
+<div id="outerpage">
+	<div id="header"><a id="header-logo" href="../" target="_top"></a><ul id="header-menu"><li><a href="../">Home</a></li><li><a href="../showcase/overview.html">Showcase</a><ul class="popupnav"><li><a href="../showcase/overview.html">Overview</a></li><li><a href="../showcase/examples.html">Examples</a></li><li><a href="../showcase/features.html">Features</a></li><li><a href="../showcase/why-choose-strata.html">Why Choose Tabular IQ?</a></li><li><a href="../showcase/what-people-are-saying.html">What People Are Saying</a></li><li><a href="../stratablog/">Tabular IQ Blog</a></li></ul></li><li><a href="../extensions/">Extensions</a><ul class="popupnav"><li><a href="../extensions/">Extension Library</a></li><li><a href="../extensions/extension-wizard.html">Extension Wizard</a></li><li><a href="../extensions/build-your-own.html">Build Your Own</a></li><li><a href="../extensions/developer-resources.html">Developer Resources</a></li><li><a href="../extensions/submit-an-extension.html">Submit an Extension</a></li></ul></li><li><a href="../labs/labs-home.html">Labs</a><ul class="popupnav"><li><a href="../labs/labs-home.html">Labs Home</a></li><li><a href="../labs/wxaui.html">wxAUI</a></li><li><a href="../labs/wxwebconnect.html">wxWebConnect</a></li></ul></li><li><a href="../blog/">Blog</a></li><li class="active"><a href="../help.html">Help</a><ul class="popupnav"><li><a href="../forums/">Forums</a></li><li><a href="video-tutorials.html">Video Tutorials</a></li><li><a href="docs/">Documentation</a></li><li><a href="technical-specs.html">Technical Specs</a></li><li><a href="feedback.html">Feedback</a></li><li><a href="../contact-us.html">Contact Us</a></li><li><a href="installation.html">Installation</a></li><li><a href="activation.html">Activation</a></li></ul></li><li class="navbutton"><a href="../strata/download"><img src="../fileadmin/images/headerfreetrial.png" alt="Try Tabular IQ for Free" /></a></li><li class="navbutton"><a href="/strata/download" target="_top"><img src="../fileadmin/images/headerbuystrata.png" alt="Buy Tabular IQ" /></a></li></ul></div>
+
+
+
+	<div id="pagecontent">
+
+		<div id="maincol"><!--TYPO3SEARCH_begin--><a id="c181"></a><div class="box">
+				<div class="boxcontent"><a id="c182"></a><h1>Tabular IQ Installation Guide</h1><p>&nbsp;</p>
+<p>Tabular IQ is very easy to install.&nbsp; It only takes a few minutes from the time you <a href="../strata/download" target="page" class="internal-link">download</a> to the time you can start working with your data.&nbsp; Below are the steps you can use to install the software:
+</p>
+<p class="left-indent"><b>1.</b>&nbsp; <a href="../strata/download" target="page" class="internal-link">Download the software from the Tabular IQ website.</a>&nbsp; Once the download is completed, the setup file will appear on your computer.</p>
+<p class="left-indent"><b>2.</b>&nbsp; Locate the setup file icon and double-click it to begin the installation process.&nbsp; A installation wizard will appear.</p><a id="c183"></a><div class="center"><br /><img src="/assets/graphics.kirix.com/installation/01-welcome.png" alt="Welcome Screen" /></div><br /><br /><a id="c184"></a><p class="left-indent"><b>3.</b>&nbsp; Click next to begin the installation process.</p><a id="c185"></a><div class="center"><br /><img src="/assets/graphics.kirix.com/installation/02-eula.png" alt="EULA Screen" /></div><br /><br />
+<p class="left-indent"><b>4.</b>  Please read the end-user license agreement.  If you agree to the terms, add a check to the checkbox on the bottom-left side entitled "I accept the terms in the License Agreement" and then click Next.</p>
+<div class="center"><br /><img src="/assets/graphics.kirix.com/installation/03-destination.png" alt="Destination Screen" /></div><br /><br />
+<p class="left-indent"><b>5.</b>  Choose which directory you would like to install into.  Normally, application files are stored in the program files directory by default if you are running Windows.  If you'd like to choose an alternate location, click the Browse button and select your location preference.  When you are finished, click Next.</p>
+<div class="center"><br /><img src="/assets/graphics.kirix.com/installation/04-ready.png" alt="Ready To Install" /></div><br /><br />
+<p class="left-indent"><b>6.</b>  You are now ready to actually install the software.  Click Install to continue.</p>
+<div class="center"><br /><img src="/assets/graphics.kirix.com/installation/05-progress.png" alt="Installation in Progress" /></div><br /><br />
+<p class="left-indent"><b>7.</b>  The installation will begin.  It should only take a few minutes to complete.</p>
+<div class="center"><br /><img src="/assets/graphics.kirix.com/installation/06-finish.png" alt="Finishing Installation" /></div><br /><br />
+<p class="left-indent"><b>8.</b>  Once the installation is complete, click Finish to close the installation wizard.</p>
+<p class="left-indent">A Tabular IQ icon will appear on your desktop.  Double-click the icon to open the software.  Alternatively, you can select the Tabular IQ item from your program files to open the software.  If you have purchased a license from the <a class="internal-link" href="/strata/download">online store</a> and wish to activate it, please see the <a class="internal-link" href="activation.html">instructions for Activating you Tabular IQ License</a>.</p></div>
+				<div class="box_bottom"></div>
+			</div><!--TYPO3SEARCH_end--></div>
+
+		<div id="rightcol"><!--TYPO3SEARCH_begin--><div class="box"><div class="boxcontent"><div id="contentmenu"><ul id="contentmenu-list"><li><a href="../forums/">Forums</a></li><li><a href="video-tutorials.html">Video Tutorials</a></li><li><a href="docs/">Documentation</a></li><li><a href="technical-specs.html">Technical Specs</a></li><li><a href="feedback.html">Feedback</a></li><li><a href="../contact-us.html">Contact Us</a></li><li class="active"><a href="installation.html">Installation</a></li><li class="last"><a href="activation.html">Activation</a></li></ul></div></div><div class="box_bottom"></div></div><!--TYPO3SEARCH_end--></div>
+	</div>
+
+	<div id="footer_full"><div id="footer_links"><a href="../about-us.html">About Us</a>&middot;<a href="../">Solutions</a>&middot;<a href="../legal/terms.html">Terms of Use</a>&middot;<a href="../legal/privacy.html">Privacy Policy</a>&middot;<a href="../contact-us.html">Contact Us</a></div><div id="footer_copyright">Copyright &copy;2006-2022&nbsp;Benjamin I. Williams. All rights reserved.&nbsp;<a href="../sitemap.html" class="grey">Site Map</a></div>
+</div>
+</div>
+
+
+
+
+</body>
+
+</html>

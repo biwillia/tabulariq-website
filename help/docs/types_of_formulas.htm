@@ -1,0 +1,141 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Types of Formulas</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="numbers,characters,dates,strings,boolean expressions,logical expressions" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Types_of_Formulas" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?types_of_formulas.htm"; }
+  else { parent.quicksync('a11.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Types of Formulas</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="working_with_formulas.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="rules_for_creating_formulas.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="working_with_formulas.htm">Working with Formulas</a> &gt; Types of Formulas</p>
+<p>&nbsp;</p>
+<p>Formulas can be used in many types of data operations and you can create formulas that return any valid data type, including numbers, characters, dates, and true/false conditions.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Numbers</span></p>
+<p>&nbsp;</p>
+<p>This type of formula returns a numeric value as its result. &nbsp;As an example, assume you have two fields, one with a "height" value and one with a "width" value. &nbsp;To identify the area of the item, you would use the following formula:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">height&nbsp;*&nbsp;width</span></p>
+<p>&nbsp;</p>
+<p>This formula uses two numeric values and results in a numeric value. &nbsp;However, if we only had a single field called "area" that contained character values like "16x10" and "20x4", we would need to first parse the values (using the function <a href="strpart.htm">STRPART()</a>)and then covert them to numeric type (using the function <a href="val.htm">VAL()</a>), before multiplying them together. &nbsp;For example, assuming the field area has one record with the value "16x10":</p>
+<p>&nbsp;</p>
+<p>Create a calculated field called "height" with the following formula:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">strpart(area,1,"x")&nbsp;&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;character&nbsp;"16"]</span></p>
+<p>&nbsp;</p>
+<p>Then, create a second calculated field called "width" with the following formula:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">strpart(area,2,"x")&nbsp;&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;character&nbsp;"10"]</span></p>
+<p>&nbsp;</p>
+<p>Finally, because both of these formulas result in "character" types, we need to convert them to numbers and multiply them together:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">val(height)&nbsp;*&nbsp;val(width)&nbsp;&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;number&nbsp;"160.00"]</span></p>
+<p>&nbsp;</p>
+<p>Alternatively, you could just combine all of this into a single formula as follows:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">val(strpart(area,1,"x"))&nbsp;*&nbsp;val(strpart(area,2,"x"))&nbsp;&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;number&nbsp;"160.00"]</span></p>
+<p>&nbsp;</p>
+<p>You typically use this type of formula format with <a href="creating_calculations.htm">calculated fields</a>.  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Characters/Strings</span></p>
+<p>&nbsp;</p>
+<p>This type of formula returns a character or a string as its result. &nbsp;As an example, assume you have two address fields, "Address1" and "Address2" that you wish to combine into a single field.</p>
+<p>&nbsp;</p>
+<p>Let's assume that Address1 contains "123 Happy Lane" and Address2 contains "Apt 4", you might use the following formula:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Address1&nbsp;+&nbsp;Address2&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;character&nbsp;"123&nbsp;Happy&nbsp;LaneApt&nbsp;4"]</span></p>
+<p>&nbsp;</p>
+<p>You'll notice that you need to add a comma and space between the two fields, to make this full address legible, like this:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Address1&nbsp;+&nbsp;",&nbsp;"&nbsp;+&nbsp;Address2&nbsp;&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;character&nbsp;"123&nbsp;Happy&nbsp;Lane,&nbsp;Apt&nbsp;4"]</span></p>
+<p>&nbsp;</p>
+<p>In some cases, you may find that you have a numeric field that you wish to convert to a character field. &nbsp;For instance, maybe a zip code field "Zipcode" was mischaracterized as a numeric value, such as "60640". &nbsp;You could convert this as follows using the <a href="str.htm">STR()</a> function:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">STR(Zipcode)&nbsp;&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;character&nbsp;"60640"]</span></p>
+<p>&nbsp;</p>
+<p>This would then let you add together the entire address (where "Citystate" = " Chicago, IL "):</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Address1&nbsp;+&nbsp;",&nbsp;"&nbsp;+&nbsp;Address2&nbsp;+&nbsp;Citystate&nbsp;+&nbsp;STR(Zipcode)&nbsp;&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;character:&nbsp;&nbsp;"123&nbsp;Happy&nbsp;Lane,&nbsp;Apt&nbsp;4&nbsp;Chicago,&nbsp;IL&nbsp;60640"</span></p>
+<p>&nbsp;</p>
+<p>You typically use this type of formula format with <a href="creating_calculations.htm">calculated fields</a>.  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Dates</span></p>
+<p>&nbsp;</p>
+<p>This type of formula returns a date as its result. &nbsp;As an example, assume you have a field called "Invoice date" and want to determine the actual date when your payment is due 30 days later. &nbsp;Assuming your date was 01/20/2008:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">[Invoice&nbsp;date]&nbsp;+&nbsp;30&nbsp;&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;date&nbsp;"02/19/2008"]</span></p>
+<p>&nbsp;</p>
+<p>Often you may see a date that is mischaracterized as a character, such as "02192008" in a field called "Invoicedate". &nbsp;You could convert this as follows using the <a href="date.htm">Date()</a> function:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Date([Invoice&nbsp;date],&nbsp;"MMDDYYYY")&nbsp;&nbsp;[this&nbsp;would&nbsp;produce&nbsp;the&nbsp;date&nbsp;"02/19/2008"]</span></p>
+<p>&nbsp;</p>
+<p>You typically use this type of formula format with <a href="creating_calculations.htm">calculated fields</a>.  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">True/False (Logical Conditions)</span></p>
+<p>&nbsp;</p>
+<p>This is a logical condition that expresses a value of either "True" or "False" (and also the result of a Boolean expression).</p>
+<p>&nbsp;</p>
+<p>As an example, assume you have a field named "State" that contains the three state names "IL", "NY" and "CA." &nbsp;If the variable called "State" is equal to "IL" then the statement is true, otherwise it is false:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">State&nbsp;=&nbsp;"IL"&nbsp;is&nbsp;a&nbsp;true&nbsp;statement</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">State&nbsp;=&nbsp;"NY"&nbsp;is&nbsp;a&nbsp;true&nbsp;statement</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">State&nbsp;=&nbsp;"OH"&nbsp;is&nbsp;a&nbsp;false&nbsp;statement</span></p>
+<p>&nbsp;</p>
+<p>In addition to <a href="creating_calculations.htm">calculated fields</a>, the following data operations also use expressions that are logical conditions: </p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><a href="filtering_data.htm">Filter</a> a set of records</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><a href="copying_data.htm">Copy</a> a set of records</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><a href="addingdeleting_data.htm">Add/Delete</a> a set of records</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><a href="marking_data.htm">Mark</a> a set of records</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><a href="finding_data.htm">Find</a> specific cells or records in a data set</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><a href="editing_data.htm">Replace</a> values in a set of records</td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

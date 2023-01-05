@@ -1,0 +1,117 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Importing Data Sets</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="data,data importing,databases,db2,external databases,importing data,mysql,odbc,oracle,sql server" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Importing_Data_Sets" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?importing_data_sets.htm"; }
+  else { parent.quicksync('a4.4.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Importing Data Sets</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="importing_and_exporting_data.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="exporting_data_sets.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="opening_and_saving_data_files.htm">Accessing and Saving Data</a> &gt; <a href="importing_and_exporting_data.htm">Importing and Exporting Data</a> &gt; Importing Data Sets</p>
+<p>&nbsp;</p>
+<p>Tabular IQ enables you to import local data files or tables from external database systems. &nbsp;To begin an import process, select Import from the File menu. &nbsp;An Import dialog will appear:</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="import_dialog.png" width="405" height="360" border="0" alt="import_dialog" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>The top section of the dialog lists the various types of imports you can perform. &nbsp;For instance, if you wish to import some CSV files, you would do this by selecting the File tab. &nbsp;If you wanted to import from your SQL Server database, you would select the SQL Server tab, etc.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Importing Text-delimited Files (CSV, TSV, TXT, etc.)</span></p>
+<p>&nbsp;</p>
+<p>You can use Tabular IQ to import different file types, similar to the types of files you can <a href="opening_local_data_files.htm">open</a> (e.g., DBF, CSV, MDB). &nbsp;Each &nbsp;of these imports use a similar process; the only exception are text-delimited files, which require you to first specify a delimiter.  </p>
+<p>&nbsp;</p>
+<p>From the Import dialog, select the text file or files you wish to import. &nbsp;You can import different types of text-delimited files, but for any single-import process, each file type must be the same for any single import process. &nbsp;After browsing for your file(s) and clicking the Next button, the following page will open, where you can select your delimiters:</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="import_dialog_csv.png" width="405" height="360" border="0" alt="import_dialog_csv" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>This settings page provides options to modify the way your text file is parsed, depending on how it is formatted: </p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Text Delimiters (Comma, Tab, None, Other):</span><span class="f_Bullets"> The radio buttons enable you to choose your text delimiter. &nbsp;For instance, to choose a comma or tab delimiter, select the appropriate radio button. To define your own text delimiter, select the Other radio button and then enter the letter or character that delimits your text file into the adjacent box.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Text Qualifier:</span><span class="f_Bullets"> Often, within text-delimited files, a special qualifier is used to designate text. Select the appropriate radio button to designate the text qualifier. &nbsp;For instance a Quotation Mark, Single Quote and None would be required for "TEXT", 'TEXT' and TEXT, respectively. To define your own text qualifier, select the "Other" radio button and then enter the qualifier in the adjacent box.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">First row contains field names checkbox:</span><span class="f_Bullets"> When this box is checked, the first row in the text file will be used for your field names. If the first row is not a field name, make sure to leave this box unchecked.</span> </td></tr></table></div><p>&nbsp;</p>
+<p>Once you are finished, click the Next button to take you to the final page of the import. &nbsp;This final page is discussed in the next section below.</p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;The import dialog enables you to import any type of text-delimited file but not fixed-length files. &nbsp;To &nbsp;open a fixed-length file, you must use the <a href="opening_local_data_files.htm">Open</a> functionality.</span> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Importing Other File Types (XLS, XLSX, MDB, ACCDB, DBF, KPG)</span></p>
+<p>&nbsp;</p>
+<p>For all other file types (and, after you select your delimiter for text files), Tabular IQ provides a dialog to specify information related to your import. &nbsp;For instance, you can specify the names of the imported files, what folder, if any, your tables should be placed in and whether you want to append the data tables.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="import_dialog_all.png" width="405" height="360" border="0" alt="import_dialog_all" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>This page provides options to modify the way your file is imported: </p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span style="font-weight: bold;">Import to:</span> &nbsp;Here you can specify where your imported files will appear in the project panel. &nbsp;If a folder is not specified, the files will just be placed into the main directory of the project panel.</td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Source Name:</span><span class="f_Bullets"> This is the original name and path of the tables to be imported. These names cannot be edited.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Destination Name:</span><span class="f_Bullets"> This is what the name of the imported table will be in the project. &nbsp;To edit the name, double-click on the destination name to bring up the edit cursor.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Append:</span><span class="f_Bullets"> &nbsp;If you'd like to append a data file to a table that already exists in your project panel, you can check the Append box next to that file. &nbsp;Data is appended to an existing table only if both the "Import to" folder and the "Destination name" of the file to be imported is the same as the existing table. &nbsp;The append follows the same rules as when you <a href="appending_records_to_a_table.htm">append records to a table</a>. &nbsp;You may only append one file at a time to an existing table in your project. &nbsp;For multiple-file appending, we recommend importing all of the tables first and then using the <a href="merging_tables_together.htm">merge</a> or <a href="appending_records_to_a_table.htm">append</a> tools to consolidate them into a single table.</span></td></tr></table></div><p>&nbsp;</p>
+<p>As an example of appending files during an import, let's say that you had three CSV files (each having the same structure) named CSV1, CSV2 and CSV3, respectively, that you wanted to add to an existing table called MAIN in Tabular IQ. &nbsp;You would select each of the files, change each of their destination names to "MAIN" and check the append checkbox. &nbsp;Then you would select the "Import to" destination folder where "MAIN" resides.  </p>
+<p>&nbsp;</p>
+<p>Once you have configured your import options, press the Finish button and the files will be imported into your project panel.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Importing Data From Database Systems</span></p>
+<p>&nbsp;</p>
+<p>You may also import tables directly from external database systems, such as MySQL Enterprise, Microsoft SQL Server, Oracle, and IBM DB2. &nbsp;You may also import from other systems using an ODBC driver. &nbsp;To import from an external system, select the appropriate tab on top of the Import dialog and you will see a connection page.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="import_dialog_database.png" width="405" height="360" border="0" alt="import_dialog_database" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>To connect to the database, enter the connection information and then click the Next button. &nbsp;The required connection information is as follows:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Server:</span><span class="f_Bullets"> Enter the name of your server. This can be entered as an IP address (e.g., 12.123.12.123) or as a domain name (e.g., hostname.domain.ext)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Database:</span><span class="f_Bullets"> Enter the name of the database within the system.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Port Number:</span><span class="f_Bullets"> Enter the port number.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">User Name:</span><span class="f_Bullets"> Enter in your login name, if any.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Password:</span><span class="f_Bullets"> Enter your password, if any.</span></td></tr></table></div><p>&nbsp;</p>
+<p>If a connection is made, you will be taken to the Import settings page as discussed above.</p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;The option to import to MySQL, Oracle, SQL Server, DB2 and other database systems may first require the installation of appropriate database drivers. &nbsp;For example, you may need to download and install the MySQL Connector/ODBC driver for MySQL or the Oracle Call Interface (OCI) driver for Oracle. Please contact your system administrator for further information. &nbsp;Third-party drivers are in no way affiliated with </span>Tabular IQ<span class="f_Note"> or its licensing agreement. &nbsp;Please contact the third-party providers of these drivers for further information on licensing and usage terms.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Saving Import Templates</span></p>
+<p>&nbsp;</p>
+<p>For imports that you perform on a regular basis, it is useful to be able to save your template to reuse at a future date. &nbsp;To &nbsp;save an import, simply create your template as normal and before selecting the Finish button on the final page, click the Save button instead. &nbsp;Then, select a name for your import template and click OK. &nbsp;Finally, select the Finish button to begin your import. &nbsp;In addition to your import starting, an import template will appear in your <a href="using_the_project_tree.htm">project panel</a>. &nbsp;To resuse the import template, simply double-click it and edit as needed before importing.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

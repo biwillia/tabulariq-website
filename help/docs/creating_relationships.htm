@@ -1,0 +1,192 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Creating Relationships</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="aggregate functions,child tables,filter related records,links,panel,panel relationships,parent tables,relationship panel,tables,tables,tables links,tables relationships" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Creating_Relationships" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?creating_relationships.htm"; }
+  else { parent.quicksync('a7'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Creating Relationships</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="creating_queries.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="designing_and_printing_reports.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+
+<p>&nbsp;</p>
+<p>Many database systems are relational. &nbsp;This means that instead of having one very large file that contains all information, common information is separated out into multiple tables and linked together by some type of reference or ID field. &nbsp;The database system then manages all the different tables and the links (or relationships) between each of them.</p>
+<p>&nbsp;</p>
+<p>When you are performing analysis on data files, you may find you have multiple files that are related in this same way. &nbsp;However, because they are outside the database system, you may need to "put them back together" in order to accomplish your task.  </p>
+<p>&nbsp;</p>
+<p>Tabular IQ enables you to perform this type of work with the Relationship Panel. &nbsp;A simple relationship may be between two different tables, each having one field in common. &nbsp;You can relate the two tables on this common field in order to join the tables together. &nbsp;Tabular IQ also lets you perform additional analysis with these related tables, such as filtering on the related records, adding fields from one table to another and using aggregate functions.  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Using the Relationships Panel</span></p>
+<p>&nbsp;</p>
+<p>To create a relationship, select Relationships from the Tools menu and the relationships panel will appear in a dialog. &nbsp;You can also toggle the relationships panel on or off using the relationship icon at the bottom left corner of the screen.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="relationship_manager.png" width="378" height="311" border="0" alt="relationship_manager" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Adding Tables</span></p>
+<p>&nbsp;</p>
+<p>To add tables to the relationships panel, either drag them into the dialog from the project panel or click the Add Tables button on the top left.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Linking or Relating Tables</span></p>
+<p>&nbsp;</p>
+<p>Once you have two or more tables that have fields in common, you can join them together. &nbsp;To do this, select a field from the main (parent) table to the related field in the second (child) table. &nbsp;The parent table will drive the relationship of all child tables. &nbsp; </p>
+<p>&nbsp;</p>
+<p>Tables will remain in Relationships Panel until you delete them (even if you close the dialog). &nbsp;To delete relationships, right-click on the black "link" between the two tables and select Delete Relation. &nbsp; To delete tables, simply right-click the red "x" on the top right corner of the table.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Activating and Updating Relationships</span></p>
+<p>&nbsp;</p>
+<p>When your relationship is set, you need to activate it. &nbsp;To do this, click the Update Relationships button on the top right corner of the dialog. &nbsp;A relationship process will commence. &nbsp;The time it takes to create the relationship will depend on the size of the tables.  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Filtering on Related Data</span></p>
+<p>&nbsp;</p>
+<p>When two tables are joined together by a common field, Tabular IQ lets you view the individual child records that relate to a single parent record. &nbsp;You can click through each record in the parent table, and view the corresponding records in the child table.</p>
+<p>&nbsp;</p>
+<p>For example, let's say you had two tables -- one that contained supplier information and one that contained supplier transaction information. &nbsp;The first table would contain general information, such as supplier ID, name, address and terms. &nbsp;The second table would contain the transactions related to the supplier, such as date of purchase, quantity and price. &nbsp;The second table would generally contain many more records (individual transactions) than the vendor information file.  </p>
+<p>&nbsp;<br>
+You may wish to view each of the transactions associated with the suppliers. &nbsp;You could do this by opening the transaction file, finding the vendor ID you want to review and then <a href="filtering_data.htm">filter</a> for those transactions. &nbsp;However, if you wanted to see this information for multiple suppliers interactively, you could create a relationship between the two tables (based upon the common ID field) and then choose to filter in two different ways, either showing only related child records or by marking related child records in context of the table. &nbsp;You may also choose not to filter your records at all and just treat them as standard, unrelated tables.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Filter Related Records Only</span></p>
+<p>&nbsp;</p>
+<p>You may choose to view the related records in your child table and nothing else. &nbsp;Just select any individual record in the main file and see the corresponding detail in the transaction file.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="relationship_filter.png" width="564" height="361" border="0" alt="relationship_filter" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>To filter on related records, do the following:</p>
+<p>&nbsp;</p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">1.</span><span class="f_Bullets"> &nbsp;Create a relationship on a common field, as discussed in the previous section.</span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">2.</span><span class="f_Bullets">  <a href="using_the_table_view.htm">Tile the tabs horizontally</a>, so that you can see both tables at one time.</span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">3.</span><span class="f_Bullets"> &nbsp;Select Related Records from the Data menu and then choose "Filter Related Records." &nbsp;You can also activate this using the Filter Related Record icon drop-down on the Bookmarks toolbar.</span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">4.</span><span class="f_Bullets"> &nbsp;In the parent table, select individual records; only the related records in the child table will be shown. </span> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Mark Related Records</span></p>
+<p>&nbsp;</p>
+<p>You may choose to view the related records in your child table and nothing else. &nbsp;Just select any individual record in the main file and see the corresponding detail in the transaction file.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="relationship_marks.png" width="564" height="361" border="0" alt="relationship_marks" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>To mark related records within the child table, do the following:</p>
+<p>&nbsp;</p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">1.</span><span class="f_Bullets"> &nbsp;Create a relationship on a common field, as discussed in the previous section.</span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">2.</span><span class="f_Bullets">  <a href="using_the_table_view.htm">Tile the tabs horizontally</a>, so that you can see both tables at one time.</span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">3.</span><span class="f_Bullets"> &nbsp;Select Related Records from the Data menu and then choose "Mark Related Records." &nbsp;You can also activate this using the Filter Related Record icon drop-down on the Bookmarks toolbar.</span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">4.</span><span class="f_Bullets"> &nbsp;In the parent table, select individual records; the related records in the child table will be marked in yellow in context with non-related records.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">View Related Tables Without a Filter</span></p>
+<p>&nbsp;</p>
+<p>If you wish, you can create a relationship and not filter for the child records.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="relationship_no_filter.png" width="564" height="361" border="0" alt="relationship_no_filter" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>To remove a filter on related records, do the following:</p>
+<p>&nbsp;</p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">1.</span><span class="f_Bullets"> &nbsp;Select Related Records from the Data menu and then choose "No Relationship Filter or Mark." &nbsp;You can also activate this using the Filter Related Record icon drop-down on the Bookmarks toolbar.</span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">2.</span><span class="f_Bullets"> &nbsp;In the parent table, select individual records; the child table records will no longer update to correspond with the selected parent record. </span> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Adding Related Fields and Creating Calculations</span></p>
+<p>&nbsp;</p>
+<p>When you have successfully related the tables together, you can also integrate fields from one table into the other as well as create calculations between the two tables.</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Adding Fields from Child Sets to Parent Sets</span></p>
+<p>&nbsp;</p>
+<p>Once tables are related together, you can insert fields from a child table into a parent table. &nbsp;It is often extremely useful to add additional information into the parent set.  </p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="relationship_fields.png" width="501" height="295" border="0" alt="relationship_fields" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>To add fields, do the following:</p>
+<p>&nbsp;</p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">1.</span><span class="f_Bullets"> &nbsp;Open the Fields Panel. &nbsp;You can do this by selecting Fields Panel from the View menu or by toggling the fields panel icon located on the bottom left of your screen.  </span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">2.</span><span class="f_Bullets"> &nbsp;Select a record in the parent table (to set the focus to the parent). &nbsp;The fields panel will be populated by all the original table's fields as well as all the fields from the child table.  </span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">3.</span><span class="f_Bullets"> &nbsp;Drag one of the child fields (designated by the "tablename.fieldname" syntax) into the parent table. &nbsp;The child field will appear in the parent table as a <a href="creating_calculations.htm">calculated field</a>.</span></p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;Because these child fields appear in the parent as a calculated field, they only persist as long as the two tables are related. &nbsp;If you uncouple/delete the relationship, the calculated fields will no longer be able to reference the related child table. &nbsp;Therefore, if you wish to remove the relationship, but keep the calculated field, you need to transform it into a fixed, static field. &nbsp;To do so, right-click on the calculated field header and select "<a href="creating_and_managing_calculat.htm">Convert to Fixed Fields</a>."</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Using Aggregate Functions from Child Sets to Parent Sets</span></p>
+<p>&nbsp;</p>
+<p>When you drag a child field to the parent table, Tabular IQ is actually just automating the creation of a new calculated field based on the child table. &nbsp;In this case, it uses the "FIRST" function:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">FIRST(childtablename.childfieldname)</span></p>
+<p>&nbsp;</p>
+<p>This function tells the calculated field to choose the first item in the list of child records and show it in the parent table. &nbsp;However, in addition to using the "FIRST" function, you can also use other aggregate functions, such as SUM, MIN, MAX, AVG. &nbsp;These aggregate functions perform the following tasks:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Min: </span><span class="f_Bullets"> Returns the minimum value in the group. &nbsp;For numeric fields, it returns the smallest number in the group; for character fields, it returns the minimum alphabetical character (closest to "a").</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Max:</span><span class="f_Bullets"> &nbsp;Returns the maximum value in the group. &nbsp;For numeric fields, it returns the largest number in the group; for character fields, it returns the maximum alphabetical character (closest to "z").</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Sum: </span><span class="f_Bullets"> Returns the sum of all values in a group.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Avg:</span><span class="f_Bullets"> &nbsp;Returns the average of all values in a group.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Count:</span><span class="f_Bullets"> &nbsp;Returns the number of items in a group.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Stddev:</span><span class="f_Bullets"> &nbsp;Returns the standard deviation of a group.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Variance:</span><span class="f_Bullets"> &nbsp;Returns the variance of a group.</span></td></tr></table></div><p>&nbsp;</p>
+<p>So, if you had a numeric field in your child set, say the price of an item, you could show the average price for all child records in the parent table. </p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="relationship_aggregate.png" width="405" height="229" border="0" alt="relationship_aggregate" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>So, in addition to showing the first item in the list, you can also use these additional aggregate functions for additional data analysis on related tables.  </p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;Because these child fields appear in the parent as a calculated field, they only persist as long as the two tables are related. &nbsp;If you uncouple/delete the relationship, the calculated fields will no longer be able to reference the related child table. &nbsp;Therefore, if you wish to remove the relationship, but keep the calculated field, you need to transform it into a fixed, static field. &nbsp;To do so, right-click on the calculated field header and select "<a href="creating_and_managing_calculat.htm">Convert to Fixed Fields</a>."</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

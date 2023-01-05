@@ -1,0 +1,357 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Creating Queries</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="queries,data operations,data operations query,tables,tables query,sql view,sql statement,scheduling queries" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Creating_Queries" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?creating_queries.htm"; }
+  else { parent.quicksync('a6'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Creating Queries</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="using_quick_sum.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="creating_relationships.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+
+<p>&nbsp;</p>
+<p>In traditional database systems, queries are the most common way for users to make requests to the database engine. &nbsp;Queries are used to communicate with the database to get it to perform various data operations, such as to selecting a set of records, or to adding, modifying, or deleting data. Typically, queries are submitted to the engine in the form of "SQL statements"-- commands that are part of the "Structured Query Language."</p>
+<p>&nbsp;</p>
+<p>Tabular IQ enables you to query your data in this tradition by using the Query Builder. &nbsp;Specifically, you can use Tabular IQ to create "select" queries to retrieve a set of records from one or more tables, and to combine these records into a new data set.</p>
+<p>&nbsp;</p>
+<p>Using a select query, you can perform a number of data operations at one time:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Join records from multiple tables into a single, combined data set.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Filter records based on custom selection criteria.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Sort records in ascending or descending order using different fields.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Group records, and perform aggregate functions on these groups.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Select a subset of grouped records based on custom selection criteria.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Create calculated fields based on the data selected in the query.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Remove any duplicate records from the data set created by the query.</span></td></tr></table></div><p>&nbsp;</p>
+<p>In general, the Query Builder make it easy for people not familiar with the Structured Query Language to develop queries that can be saved and run in the future, either manually or via the <a href="viewing_and_scheduling_jobs.htm">job scheduler</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Query Builder Overview</span></p>
+<p>&nbsp;</p>
+<p>To create a query, select New &gt; Query from the File menu and the query builder will appear in a new tab.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="query_builder.png" width="534" height="388" border="0" alt="query_builder" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Adding Tables</span></p>
+<p>&nbsp;</p>
+<p>As shown in the above screenshot, you may add tables to query in the top part of the Query Builder. &nbsp;To add tables, either drag them from the project panel or click the Add Tables button on the top left of the query builder.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Joining or Relating Tables</span></p>
+<p>&nbsp;</p>
+<p>In addition, you can relate (or join) multiple tables together that can be used in your query. &nbsp;To do this, select a field from the main (parent) table to the related field in the second (child) table. &nbsp;The parent table will drive the relationship of all child tables. </p>
+<p>&nbsp;</p>
+<p>The default join operation is an "Inner Join", which will join only on matching records in both data sets. &nbsp;To select a "Left Outer Join", which contains all matching records as well as all non-matching records from the parent table, right-click on the black line linking the two tables and select "Left Outer Join."</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Selecting an Output Table</span></p>
+<p>&nbsp;<br>
+You can also output the data set generated by the query to a new or existing table by using the Output Table box on the upper right of the page. &nbsp;Enter a new table name in the box or select Browse to find an existing table from your Project to overwrite.</p>
+<p> &nbsp; </p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Removing Duplicate Records</span></p>
+<p>&nbsp;</p>
+<p>To remove any duplicate records from the output results, click the checkbox next to &nbsp;the "Select Distinct" option box at the top right.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Defining the Query</span></p>
+<p>&nbsp;</p>
+<p>This section will discuss the bottom part of the query builder, which lets you define your query processes such as adding fields and sorting and filtering your results.</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Adding, Moving and Removing Fields in the Query</span></p>
+<p>&nbsp;</p>
+<p>To begin, you need to add fields to your query. &nbsp;To do this, either double-click on the fields listed in the table above, or simply drag them from the table down to the Query Definition area. &nbsp;When you drag fields into the Query Definition area, they appear in a certain syntax that designates the table name and the field name. &nbsp;This is important to help distinguish field names if you are using multiple tables. &nbsp;The syntax is as follows:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">tablename.fieldname</span></p>
+<p>&nbsp;</p>
+<p>So, if your table was named Web_logs and the selected field was called Referrer, the field would appear in the query definition as follows:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Web_logs.Referrer</span></p>
+<p>&nbsp;</p>
+<p>If you have multiple fields, you can change the order by selecting a field and dragging it up or down within the Query Definition section.  </p>
+<p>&nbsp;</p>
+<p>To remove a field, select the field and then click the delete button on your keyboard.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Selecting Fields to Appear in the Output</span></p>
+<p>&nbsp;</p>
+<p>On the far left of each row is a checkbox. &nbsp;When the checkbox is checked the field will appear in your output table. &nbsp;If you do not want to have the field in your output table, remove the check from the box.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Creating Calculated Fields</span></p>
+<p>&nbsp;</p>
+<p>You may also create calculated fields within your queries. &nbsp;These calculated fields use formulas like normal <a href="creating_calculations.htm">calculated fields found &nbsp;within a data table</a>. &nbsp;However, in queries, the calculated fields in the output table are "fixed" instead of dynamic. &nbsp;To create a calculation, develop your formula within the "Input Formula" area. &nbsp;For example, suppose you had the following field in the query definition:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Web_logs.Referrer</span></p>
+<p>&nbsp;</p>
+<p>Some of these log referrers might be uppercase and lowercase. &nbsp;To make your analysis clearer, you may want to turn every referrer into uppercase. &nbsp;To do this, you would modify the Input Formula using the <a href="upper.htm">UPPER()</a> function:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">upper(Web_logs.Referrer)</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Naming the Output Field</span></p>
+<p>&nbsp;</p>
+<p>When creating a query, you can also specify the names of your output fields. &nbsp;As a default, these are set to the original names of the fields. &nbsp;However, to edit them, simply double click on the Output Field section and change the name.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Grouping and Creating Aggregate Functions</span></p>
+<p>&nbsp;</p>
+<p>To perform a grouping operation, click on the field and then select "Group By" from the Function drop-down list. <a href="grouping_data.htm">Click here for further information about grouping.</a></p>
+<p>&nbsp;</p>
+<p>Once you have selected a group on a given field, you can select aggregate functions for other fields, such as minimum, maximum, or sum. &nbsp;You can also add a Count field or a Group ID field. &nbsp;A count will provide you with the total number of records per group. &nbsp;A Group ID will simply add a record number to each group.  </p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE 1: &nbsp;If you do not select a Group By function first, the aggregate functions, Count and Group ID will override the query and produce an output table with a single records. &nbsp;In these cases, because no group has been selected, the function assumes the entire table is a single group.</span></p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE 2: &nbsp;If you have a field in the Query Definition and select the function Count or Group ID, these functions will override anything else (selections, formulas, etc.) in that row.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Sorting or Ordering your Output</span></p>
+<p>&nbsp;</p>
+<p>Within your query, you may specify the sort order of your output results. &nbsp;To do this, select the field you wish to sort on and the use the drop-down list to select "1. Ascending" or "1.Descending" from the list for your first order priority. &nbsp;To add a second sort priority, select "2.Ascending" or "2. Descending" from the list in a different field.</p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;The query builder will not allow you to select two sort orders that have the same sort priority. &nbsp;So, for instance, you may not select "1.Ascending" on two different fields.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Criteria: Filtering Records</span> </p>
+<p>&nbsp;</p>
+<p>You may also filter records in your query. &nbsp;To do, select the field you wish to filter and then type your filter criteria in the Criteria box (just a plain number or text field is needed; no formula is required). &nbsp;If you wish to add further filter criteria, you need to determine if the filter is an "AND" or an "OR" condition:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">For AND conditions, add the additional filter criteria in the Criteria boxes for other fields.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">For OR conditions, add the additional filter criteria in the Or boxes for other fields.</span></td></tr></table></div><p>&nbsp;</p>
+<p>For example, if you want to filter where field1 = A AND field 3 = B, the query definition would be as follows:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="50%" cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Field</span></p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Criteria</span></p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Or</span></p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Or</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field1</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>A</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field2</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field3</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>B</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field4</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>If you want a filter where field1 = A OR field4 = C, the query definition would be as follows:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="50%" cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Field</span></p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Criteria</span></p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Or</span></p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Or</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field1</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>A</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field2</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field3</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field4</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>C</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>If you want a filter where field1 = A OR field 2 = B OR field 2 = C, the query definition would be as follows:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="50%" cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Field</span></p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Criteria</span></p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Or</span></p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p><span style="font-weight: bold;">Or</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field1</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>A</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field2</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>B</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><p>C</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field3</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" style="border: solid 1px #000000;"><p>field4</p>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+<td valign="top" style="border: solid 1px #000000;"><br>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Criteria: Custom Filters</span></p>
+<p>&nbsp;</p>
+<p>You can also create custom filters by creating logical formulas. &nbsp;For instance, you may specify criteria like:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&gt;&nbsp;15</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&lt;=&nbsp;453</span></p>
+<p>&nbsp;</p>
+<p>You may use any boolean (true/false) expression for this (&gt;,&lt;,!=,&lt;=,&lt;&gt;,etc.).</p>
+<p>&nbsp;</p>
+<p>In addition, you &nbsp;may also create more complicated boolean expressions by adding function names. &nbsp;To do this, you must add a colon (:) before the formula or the query will not run properly. &nbsp;This effectively passes the expression directly into the SQL Statement, so syntax needs to be correct. &nbsp;An example formula, where the field is called "fieldname", might look like this:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">:contains(fieldname,"ABC")</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Running and Saving Queries</span></p>
+<p>&nbsp;</p>
+<p>Once you have finished defining your query, you can save it by selecting the Save option from the File menu, or simply by clicking on the Save icon. &nbsp;A Save dialog will appear so that you can name your query and save it to the project panel.</p>
+<p>&nbsp;</p>
+<p>In order to run your query, select Run Query/Script from the Tools menu. &nbsp;The query will run and a table will appear. &nbsp;The table is just another view of the query definition. &nbsp;Therefore, you can toggle between the Design View from the View menu and the Table View from the View menu (or by toggling the View icon on the top-right corner). &nbsp;Additionally, the query builder provides a SQL view, which shows the SQL syntax of the query. &nbsp;This view is read-only in that you cannot manually edit the SQL syntax to change the Query. &nbsp;However, you may copy the text to use the SQL syntax elsewhere, like into a <a href="using_scripts_and_extensions.htm">script</a>.  </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Scheduling Queries</span></p>
+<p>&nbsp;</p>
+<p>You can schedule queries to be run at a specific time or series of times in the future.  <a href="viewing_and_scheduling_jobs.htm">Click here for further information about scheduling queries.</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

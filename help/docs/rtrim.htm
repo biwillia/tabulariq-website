@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Rtrim()</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="rtrim(),functions,functions rtrim()" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Rtrim" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?rtrim.htm"; }
+  else { parent.quicksync('a11.4.5.18'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Rtrim()</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="rpad.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="soundex.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="working_with_formulas.htm">Working with Formulas</a> &gt; <a href="functions_used_in_formulas.htm">Functions Used in Formulas</a> &gt; <a href="text_functions.htm">Text Functions</a> &gt; Rtrim()</p>
+<p>&nbsp;</p>
+<p>RTRIM() removes each character in the list from the right side of the string. When a rightmost character in the string matches a character in the list, the character in the string is removed. The process then repeats itself with all characters in the list, regardless of order, until no further rightmost characters in the string are present in the list. If the list is blank, RTRIM() removes spaces from the right side of the string. See examples below for further clarification. </p>
+<p>&nbsp;</p>
+<p>RTRIM() is similar to TRIM(), which removes characters from the left and right sides of a string, and to LTRIM(), which removes characters from the left side of a string. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Function Format</span> </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM(string&nbsp;[,&nbsp;list])&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Return Value</span> </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM()&nbsp;returns&nbsp;a&nbsp;character&nbsp;string&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Examples</span> </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM("&nbsp;APPLES&nbsp;")&nbsp;=&nbsp;"&nbsp;APPLES"&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM("APPLES",&nbsp;"S")&nbsp;=&nbsp;"APPLE"&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM("APPLES",&nbsp;"SE")&nbsp;=&nbsp;"APPL"&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM("APPLES",&nbsp;"E")&nbsp;=&nbsp;"APPLES"&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM&nbsp;("APPLES",&nbsp;"ES")&nbsp;=&nbsp;"APPL"&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM("APPLES",&nbsp;"ELP")&nbsp;=&nbsp;"APPLES"&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM("APPLES",&nbsp;"ELPS")&nbsp;=&nbsp;"A"&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM("ABRACADABRA",&nbsp;"ARBD")&nbsp;=&nbsp;"ABRAC"&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">RTRIM("ABRACADABRA",&nbsp;"ARBDC")&nbsp;=&nbsp;""&nbsp;</span></p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* Text Styles */
+hr { color: #444444}
+body, table, tr, th /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #444444;
+ text-decoration: none;
+}
+span.f_Alert /* Alert */
+{
+ font-size: 14pt;
+}
+span.f_Bullets /* Bullets */
+{
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.f_CodeExample2 /* Code Example2 */
+{
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.f_CodeExample3 /* Code Example3 */
+{
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.f_CodeIndent /* Code Indent */
+{
+ font-family: 'Courier New';
+ font-style: italic;
+ color: #000000;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_CourierFixed /* Courier Fixed */
+{
+ font-size: 9pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 19pt;
+ color: #ffffff;
+}
+span.f_Heading2 /* Heading2 */
+{
+ font-size: 17pt;
+ color: #fe7100;
+}
+span.f_Heading3 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.f_Heading4 /* Heading4 */
+{
+ font-size: 11pt;
+ font-style: italic;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+span.f_Indent1 /* Indent1 */
+{
+ font-style: italic;
+}
+span.f_Indent2 /* Indent2 */
+{
+}
+span.f_Normal2 /* Normal2 */
+{
+}
+span.f_NormalBold /* NormalBold */
+{
+ font-weight: bold;
+}
+span.f_Note /* Note */
+{
+ font-style: italic;
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_Notes_small /* Notes_small */
+{
+ font-size: 7pt;
+}
+/* Paragraph styles */
+p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.p_Alert /* Alert */
+{
+ background: #ff0000;
+}
+.p_Bullets /* Bullets */
+{
+ margin: 0px 0px 0px 48px;
+}
+.p_CodeExample /* Code Example */
+{
+ white-space: nowrap;
+}
+.p_CodeExample2 /* Code Example2 */
+{
+ white-space: nowrap;
+ margin: 0px 0px 0px 19px;
+}
+.p_CodeExample3 /* Code Example3 */
+{
+ white-space: nowrap;
+ background: #f5f5f5;
+ margin: 0px 0px 0px 19px;
+}
+.p_CodeIndent /* Code Indent */
+{
+ white-space: nowrap;
+ margin: 5px 0px 0px 19px;
+}
+.p_Comment /* Comment */
+{
+}
+.p_Heading1 /* Heading1 */
+{
+}
+.p_Heading2 /* Heading2 */
+{
+}
+.p_Heading3 /* Heading3 */
+{
+ border-color: #f0f0f0;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+}
+.p_Heading4 /* Heading4 */
+{
+ border-color: #f0f0f0;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+}
+.p_ImageCaption /* Image Caption */
+{
+}
+.p_Indent1 /* Indent1 */
+{
+ margin: 5px 0px 5px 19px;
+}
+.p_Indent2 /* Indent2 */
+{
+ margin: 5px 0px 0px 38px;
+}
+.p_Normal2 /* Normal2 */
+{
+}
+.p_NormalBold /* NormalBold */
+{
+}
+.p_Note /* Note */
+{
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ background: #f5f5f5;
+ margin: 10px 19px 10px 19px;
+}
+.p_Notes /* Notes */
+{
+}
+.p_Notes_small /* Notes_small */
+{
+}

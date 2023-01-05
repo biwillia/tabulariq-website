@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Sorting/Ordering Fields</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="data operations,data operations order,data operations sort,edit indexes,indexes,order records,sort orders,sort records,tables,tables order records,tables sort records" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Sorting_Data" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?sorting_data.htm"; }
+  else { parent.quicksync('a5.5'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Sorting/Ordering Fields</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="copying_data.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="filtering_data.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="performing_standard_data_opera.htm">Performing Standard Data Operations</a> &gt; Sorting/Ordering Fields</p>
+<p>&nbsp;</p>
+<p>Sorting data is a fundamental tool for performing data analysis. &nbsp;It is often imperative to see records sorted or ordered in a certain way, either alphabetically, from lowest to highest, or by date. &nbsp;Tabular IQ provides two methods you can use to sort your data -- quick sort and using a custom order.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Using Quick Sort</span></p>
+<p>&nbsp;</p>
+<p>To change the order of a column in your table, simply right-click on the field header and select either "Sort Ascending" or "Sort Descending". &nbsp;The table will sort accordingly.</p>
+<p>&nbsp;</p>
+<p>If you want to sort using multiple columns as criteria, highlight each of the columns you wish to sort on and the right-click to sort ascending or descending.</p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;For multiple column sorting, </span>Tabular IQ<span class="f_Note"> sorts from left to right, so you should move your columns in the order you wish to sort before performing an ordering operation.  </span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Creating a Custom Order</span></p>
+<p>&nbsp;</p>
+<p>You can also create a custom order by selecting "Sort" from the Data menu. &nbsp;The following dialog will appear:</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="sort.png" width="608" height="307" border="0" alt="sort" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>Select field names from the left side and drag them into the dialog to create the sort precedence. &nbsp;Then click under "Direction" and choose a sort direction from the drop-down menu. &nbsp;Click on the Sort button to sort your table.</p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;To pre-populate your dialog, simply highlight the field(s) you wish to use before selecting the Sort option.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Saving Indexes</span></p>
+<p>&nbsp;</p>
+<p>Indexes are the low-level database process that enables data operations like sorts and <a href="creating_relationships.htm">relationships</a>. &nbsp;Tabular IQ enables you to save these indexes to increase the speed of your processing and analysis. &nbsp;For example, instead of sorting fields each time you use a table, you can just save the index. &nbsp;By saving the index, you will have access to "instant" sorts when you sort in the future. &nbsp;To save an index, select Edit Indexes from the Data menu and the following dialog will appear:</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="indexes.png" width="480" height="300" border="0" alt="indexes" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>Click the Add button to create a new index. &nbsp;To rename the index, double-click the index name and edit the text. &nbsp;To create your index, drag fields from the Available Fields area to the Index Fields area. &nbsp;Lastly, in the Index Fields area, you may set the Sort Direction either Ascending or Descending by double-clicking and choosing the option from the drop-down menu. &nbsp;Click OK and a index creation process will begin. &nbsp;Once the process is finished, the table will be sort as requested and the index will be saved for future use.</p>
+<p>&nbsp;</p>
+<p>If you sort a field that has a saved index, the sort will happen instantly. &nbsp;However, instead of manually sorting, you may also quickly access your indexes by right-clicking on any field header and selecting Sort Orders from the menu. &nbsp;The menu will expand to show all the saved indexes for your table. &nbsp;Click a saved index and the table will sort as expected.</p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;Saved indexes should be named similar to the way fields are named. &nbsp;Therefore indexes cannot have duplicate names, cannot begin with numbers or a period, and cannot contain spaces or any of the following characters: &nbsp;~!@#$%^&amp;*()+{}|:"&lt;&gt;?`-=[]\;',/</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Reverting Back to the Default Order</span></p>
+<p>&nbsp;</p>
+<p>In order to get back to the natural order of your table, simply select "Remove Sort/Filter" from the Data menu. &nbsp;Your table will then appear in its original order.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

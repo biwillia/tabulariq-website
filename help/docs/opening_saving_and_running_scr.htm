@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Opening, Saving and Running Scripts</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="console panel,find text,go to,options,options script,panel,panel console,preferences,preferences script,replace text,scheduling scripts,scripts,settings,settings script,sql,structured query language" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Opening_Saving_and_Running_Scr" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?opening_saving_and_running_scr.htm"; }
+  else { parent.quicksync('a10.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Opening, Saving and Running Scripts</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="using_scripts_and_extensions.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="using_structured_query_language_sql.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="using_scripts_and_extensions.htm">Using Scripts, SQL and Extensions</a> &gt; Opening, Saving and Running Scripts</p>
+<p>&nbsp;</p>
+<p>The scripting language is an implementation of the ECMAscript (e.g. Javascript) with bindings for <a href="using_structured_query_language_sql.htm">SQL</a> and HTTP and includes a class implementation so you can use web APIs and create desktop mashups. &nbsp;There are many resources freely available on the Web and in technical books that explain how to develop using ECMAscripts. &nbsp;However, please contact us for more detailed documentation regarding the specific language and bindings related to our implementation of ECMAscript.</p>
+<p>&nbsp;</p>
+<p>Below is some further information about creating and running scripts in Tabular IQ.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Opening, Saving and Running Scripts</span></p>
+<p>&nbsp;</p>
+<p>To create a new script, select New &gt; Script from the File menu and a script editor will appear. &nbsp;You can then begin writing your script in the editor, such as this simple example that pops open a message box that says "Hello World":</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">alert("Hello&nbsp;World")</span></p>
+<p>&nbsp;</p>
+<p>Once you have finished writing you script, you can save it by either selecting File &gt; Save or selecting the Save icon on the toolbar. &nbsp;A Save dialog will appear so you can save it to your <a href="using_projects.htm">Project</a>.  </p>
+<p>&nbsp;</p>
+<p>To run a script that is open, simply click Run Script/Query from the Tools menu. &nbsp;Additionally, you can right-click the script on the project panel and select Run. &nbsp;And even more efficiently, it is helpful to use the keyboard shortcut Alt+Enter when writing scripts to quickly run them without needing to use a menu at all.  </p>
+<p>&nbsp;</p>
+<p>Additionally, when editing a script, it is often useful to be able to jump to a certain line. &nbsp;To do this, use the Go To dialog by selecting Go To from the Edit menu or by using the keyboard shortcut CTRL+G.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Finding and Replacing within Scripts</span></p>
+<p>&nbsp;</p>
+<p>It is often important to be able to search for a text string and replace it when developing a script. &nbsp;To find and replace when scripting, select Edit &gt; Replace:</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="find_and_replace.png" width="255" height="184" border="0" alt="find_and_replace" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>Enter the text you wish to find and click the Find Next button to identify the first result. &nbsp;To replace enter the text you wish to use instead and then click the "Replace" button. &nbsp;To replace all instance of your query text, select the "Replace All" button.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Scheduling Scripts</span></p>
+<p>&nbsp;</p>
+<p>You can schedule scripts to be run at a specific time or series of times in the future by using the <a href="viewing_and_scheduling_jobs.htm">Job Scheduler</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Script Preferences</span></p>
+<p>&nbsp;</p>
+<p>You can also select certain preferences and behavior for the text editor, when you are writing your scripts. &nbsp;To change the preferences, select Options from the Tools menu and then select the Script tab.</p>
+<p>&nbsp;</p>
+<p>You can then change the way your editor looks, including showing line numbers, syntax highlighting and white space characters. &nbsp;You can also change the behavior for how you would like tabs to work.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Using the Console Panel</span></p>
+<p>&nbsp;</p>
+<p>In addition to creating a new script window, you can write SQL statements in the <a href="using_structured_query_language_sql.htm">Console Panel</a> to query a database from the command line. &nbsp;Additionally, you can use the Console panel to output results from your script. &nbsp;To open the Console Panel, select View &gt; Console Panel. &nbsp;More information on using the Console Panel can be found <a href="using_structured_query_language_sql.htm">here</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

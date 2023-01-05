@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Viewing and Scheduling Jobs</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="jobs,viewing jobs,scheduling jobs" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Viewing_and_Scheduling_Jobs" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?viewing_and_scheduling_jobs.htm"; }
+  else { parent.quicksync('a9'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Viewing and Scheduling Jobs</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="printing_saving_and_sharing_a_.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="using_scripts_and_extensions.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+
+<p>&nbsp;</p>
+<p>When you perform an operation in Tabular IQ, such as <a href="filtering_data.htm">performing a filter operation</a>, <a href="importing_data_sets.htm">importing a table</a> or <a href="opening_data_from_the_web.htm">opening a data table from the web</a> it is logged in the Job Manager. &nbsp;The Job Manager gives you a history of most processes, including the time, the length and the status.</p>
+<p>&nbsp;</p>
+<p>In addition to reviewing historical jobs, two specific processes can be scheduled to run in the future: <a href="creating_queries.htm">queries</a> and <a href="using_scripts_and_extensions.htm">scripts</a>. &nbsp;This section will discuss both viewing and scheduling jobs.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Viewing and Reviewing Jobs</span></p>
+<p>&nbsp;</p>
+<p>For many types of jobs, such as filtering on a small data set, the operation will appear to run almost instantly. &nbsp;However, for each type of operation, a "job" is run, a job status appears in the status bar, and the job is recorded by the job manager.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="job_manager.png" width="566" height="398" border="0" alt="job_manager" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>In the example above, we are running a filter operation on this data table. &nbsp;It has approximately 600,000 records, so the operation takes a few seconds to process. &nbsp;The green progress bar in the status bar at the bottom shows approximately how much of the processing has been finished. &nbsp;To view more information, either double-click on the progress bar or select Job Manager from the Tools menu to open up the Job Manager. &nbsp;When jobs are in process, the Job Manager also shows the progress of the job with additional detail.</p>
+<p>&nbsp;</p>
+<p>Once a job is finished, it is recorded in the Job Manager for review. &nbsp;You can clear all contents by clicking the Clean Up button on the bottom left. &nbsp;Jobs are given a green checkmark if they processed correctly or a red "x" if they did work properly. &nbsp;Tabular IQ processes all jobs in the background, so if you wish to run multiple jobs at one time, they will queue up in the Job Manager.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Scheduling Jobs</span></p>
+<p>&nbsp;</p>
+<p>If you create a valid <a href="creating_queries.htm">query</a> or <a href="using_scripts_and_extensions.htm">script</a>, you can run them at a specified time in the future or on a recurring basis. &nbsp;This is often helpful if wish to run a certain process on a data set that is regularly updated with new data. &nbsp;For instance, in this situation, you could create a script that ran the desired operations and run it overnight, after the data had been refreshed. &nbsp;To schedule a job, select Schedule Jobs from the Tools menu.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="job_scheduler.png" width="480" height="315" border="0" alt="job_scheduler" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>On the left side of the dialog are the job names and schedule. &nbsp;You can edit the name of the job by double-clicking on the name. &nbsp;The Schedule will update depending on what schedule settings are selected on the right side of the dialog. &nbsp;To delete a job, select the job and then click the Delete key on your keyboard.  </p>
+<p>&nbsp;</p>
+<p>Jobs can be scheduled Once or on a Daily, Weekly or Monthly basis. &nbsp;This setting can be changed by selecting the Schedule Job drop-down menu on the top right side of the dialog:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Once:</span><span class="f_Bullets"> &nbsp;This will run the job only one time. &nbsp;Set your beginning time and date.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Daily:</span><span class="f_Bullets"> &nbsp;This will run the job once per day. &nbsp;Set your beginning time and date. &nbsp;If you want to stop the daily job at some point in the future, select and ending time and date. &nbsp;For perpetually recurring jobs, just make sure the End checkbox is not selected. &nbsp;Lastly, you can schedule the job to run multiple times per day, by repeating the job at a regular interval. &nbsp;Select the "Repeat every xx Minutes" &nbsp;and use the arrows to change the minute interval.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Weekly:</span><span class="f_Bullets"> &nbsp;This will run the job once per week or on set days per week. &nbsp;Set the beginning time and date. &nbsp;If you want to stop the weekly job at some point in the future, select an ending time and date. &nbsp;For perpetually recurring jobs, just make sure the End checkbox is not selected. &nbsp;Finally, select the weekday(s) you wish to run this job.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Monthly:</span><span class="f_Bullets"> &nbsp;This will run the job on a monthly basis. &nbsp;Set the beginning time and date. &nbsp;If you want to stop the monthly job at some point in the future, select and ending time and date. &nbsp;For perpetually recurring jobs, just make sure the End checkbox is not selected. &nbsp;Lastly, choose the day of the month you wish to schedule the job. &nbsp;It is recommended that you select only the 1st through 28th of any given month in order to make sure all months are accounted for (e.g., June does not have a 31st day).</span></td></tr></table></div><p>&nbsp;</p>
+<p>On the bottom right side of the dialog is the Processes section, a place to add your queries or scripts for processing. Drag these operations from the project panel into this area. &nbsp;Jobs will run based on the order they are added to the Processes section. &nbsp;To delete a command, select the operation you wish to remove and click the Delete key from your keyboard. </p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

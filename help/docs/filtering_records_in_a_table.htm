@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Filtering Records in a Table</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="data operations,data operations filter,filter records,tables,tables filter records" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Filtering_Records_in_a_Table" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?filtering_records_in_a_table.htm"; }
+  else { parent.quicksync('a5.6.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Filtering Records in a Table</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="using_the_quick_filter_utility.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="finding_data.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="performing_standard_data_opera.htm">Performing Standard Data Operations</a> &gt; <a href="filtering_data.htm">Filtering Data</a> &gt; Filtering Records in a Table</p>
+<p>&nbsp;</p>
+<p>When analyzing data, it is often very handy to be able to filter on specific records in order to limit the size and scope of your data set. &nbsp;This section explains how to filter data by simply using the criteria in a given cell or by creating a more advanced custom formula.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Filtering Records Based upon Criteria in a Cell</span></p>
+<p>&nbsp;</p>
+<p>You can quickly filter a subset of records from a table based on criteria in a given cell.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="filiter_criteria.png" width="491" height="332" border="0" alt="filiter_criteria" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>In this example, we will filter all records in the table where the Vendor Name is not equal to "AVIVA FOODS" (i.e., filter the data set to show all records except where the vendor name is "AVIVA FOODS"). &nbsp;To filter in this way, do the following:</p>
+<p>&nbsp;</p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">1.</span><span class="f_Bullets"> Right-click on the cell that contains the criteria you want to use as the basis for filtering records, then move the mouse over "Filter Records".</span></p>
+<p class="p_Bullets"><span class="f_Bullets">&nbsp;</span></p>
+<p class="p_Bullets"><span class="f_Bullets" style="font-weight: bold;">2.</span><span class="f_Bullets"> Select one of the options from the "Filter Records" sub-menu, such as filtering records equal to the value, greater than the value, etc.  </span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Filtering Records Based upon a Formula</span></p>
+<p>&nbsp;</p>
+<p>You can also use a custom formula to filter a group of records from your table. &nbsp;To do this, select "Filter" from the Data menu and the following dialog will appear:</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="filter_custom.png" width="420" height="225" border="0" alt="filter_custom" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>As shown above, you need to enter in a Boolean formula with the appropriate criteria that matches the records you wish to filter. &nbsp;In the example above, we would filter the data set when the field "Vend_name" does not contain "AVIVA FOODS" (i.e., show everything but "AVIVA FOODS").</p>
+<p>&nbsp;</p>
+<p>Click the OK button and the filter operation will begin. &nbsp;Once it is finished, the data set will be reduced on the screen to only the filtered data.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Removing a Filter</span></p>
+<p>&nbsp;</p>
+<p>Once a filter is in place, it is simple to remove it and return to your original data set. &nbsp;To remove a filter, do one of the following:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-weight: bold; font-size: 10pt; font-family: 'Arial'; color: #444444;">1.</span></td><td><span class="f_Bullets">Select "Remove Sort/Filter" from the Data menu.</span><span class="f_Bullets" style="font-weight: bold;"> </span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="15"><span style="font-weight: bold; font-size: 10pt; font-family: 'Arial'; color: #444444;">2.</span></td><td><span class="f_Bullets">Select the "Quick Filter" icon from the Navigation Toolbar, which should be activated. &nbsp;Clicking the icon will deactivate your filter.  </span></td></tr></table></div><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

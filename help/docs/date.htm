@@ -1,0 +1,133 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Date()</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="date(),functions,functions date()" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Date" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?date.htm"; }
+  else { parent.quicksync('a11.4.2.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Date()</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="conversion_functions.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="str.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="working_with_formulas.htm">Working with Formulas</a> &gt; <a href="functions_used_in_formulas.htm">Functions Used in Formulas</a> &gt; <a href="conversion_functions.htm">Conversion Functions</a> &gt; Date()</p>
+<p>&nbsp;</p>
+<p>The DATE() function is a versatile tool that can be used either as a way to input a date or as a way to convert a character type to a date type.</p>
+<p>&nbsp;</p>
+<p>The first way to use DATE() is to input the values of the date in the order specified below, where "YYYY" specifies year, "MM" specifies month and "DD" specifies day. The second way to use DATE() is to input a character expression as the parameter for the function. DATE() converts the character expression to a date expression. The character expression can specify the date in the following formats: </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">MM/DD/YYYY</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">YYYY/DD/MM</span></p>
+<p>&nbsp;</p>
+<p>For conversion mapping functions, you may also use the following formats: </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DDMMYYYY</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">YYYYDDMM</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">MMYYYYDD</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DDYYYYMM</span></p>
+<p>&nbsp;</p>
+<p>Also, you can use dashes instead of slashes to separate the month, day, and year parts of the string such as: </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">MM-DD-YYYY&nbsp;or&nbsp;YYYY-MM-DD</span></p>
+<p>&nbsp;</p>
+<p>As an example of this dual usage, if you had a date field called "field1" and wish to filter your data so you only see dates after February 1, 2007, you could use either of the following formulas:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Field1&nbsp;&gt;&nbsp;DATE(2007,2,1)</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Field1&nbsp;&gt;&nbsp;DATE("02/01/2007",&nbsp;"MM/DD/YYYY")</span></p>
+<p>&nbsp;</p>
+<p>The first enables you to input the date, the second takes the additional step to convert the character string to the date format.</p>
+<p>&nbsp;</p>
+<p>Additionally, there are two special date conversion cases worth mentioning: &nbsp;Julian date format and Unix timestamp formats. &nbsp;A Julian date is the number of days since January 1, 4713 BC GMT. &nbsp;To convert a Julian date to the current date, you can simply use DATE(0,0,0) + &lt;number&gt;, where &lt;number&gt; is the Julian date. &nbsp;For for example, if the number appears as "2454917", the formula in Tabular IQ would be:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE(0,0,0)&nbsp;+&nbsp;&nbsp;2454917&nbsp;&nbsp;[the&nbsp;result&nbsp;would&nbsp;be&nbsp;March,&nbsp;26,&nbsp;2009]</span></p>
+<p>&nbsp;</p>
+<p>A Unix timestamp is the number of seconds since 1970. &nbsp;To convert a Unix timestamp to the current date, use DATE(&lt;number&gt;), where &lt;number&gt; is the number of milliseconds since 1970. &nbsp;If the timestamp is given in seconds, multiply by 1000: &nbsp;DATE(&lt;number&gt;*1000). &nbsp;So, for example, if you the number appears as "1237657172", the formula in Tabular IQ would be:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE(1238088021&nbsp;*&nbsp;1000)&nbsp;&nbsp;[the&nbsp;result&nbsp;would&nbsp;be&nbsp;March,&nbsp;26,&nbsp;2009]</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Function Format</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE(year,&nbsp;month,&nbsp;day&nbsp;[,&nbsp;hour,&nbsp;minute,&nbsp;second])&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE(string)&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE(string,&nbsp;conversion&nbsp;mapping&nbsp;string)</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Return Value</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE()&nbsp;returns&nbsp;a&nbsp;date</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Examples</span></p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE(2007,12,25)&nbsp;=&nbsp;the&nbsp;date,&nbsp;December&nbsp;25,&nbsp;2007</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE(2007,12,25,8,15,30)&nbsp;=&nbsp;the&nbsp;date,&nbsp;December&nbsp;25,&nbsp;2007&nbsp;at&nbsp;8:15:30&nbsp;A.M.</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE("07/04/2007")&nbsp;=&nbsp;the&nbsp;date,&nbsp;July&nbsp;4,&nbsp;2007</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE("2007-10-22")&nbsp;=&nbsp;the&nbsp;date,&nbsp;October&nbsp;22,&nbsp;2007</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE(0,0,0)&nbsp;+&nbsp;&nbsp;2454917&nbsp;=&nbsp;the&nbsp;date,&nbsp;March,&nbsp;26,&nbsp;2009</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE(1238088021&nbsp;*&nbsp;1000)&nbsp;=&nbsp;the&nbsp;date,&nbsp;March,&nbsp;26,&nbsp;2009</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE("20071122","YYYYMMDD")&nbsp;=&nbsp;11/22/2007</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE("2007-22-11","YYYYDDMM")&nbsp;=&nbsp;11/22/2007</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE("11222007","MM/DD/YYYY")&nbsp;=&nbsp;11/22/2007&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">DATE("11/22/2007",&nbsp;"MMDDYYYY")&nbsp;=&nbsp;11/22/2007</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

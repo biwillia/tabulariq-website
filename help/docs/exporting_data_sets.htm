@@ -1,0 +1,109 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Exporting Data Sets</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="data,data exporting,databases,db2,exporting,external databases,fixed-length files,mysql,odbc,oracle,sql server,text-delimited files,txt" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Exporting_Data_Sets" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?exporting_data_sets.htm"; }
+  else { parent.quicksync('a4.4.2'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Exporting Data Sets</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="importing_data_sets.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="importing_data_using_scripts.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="opening_and_saving_data_files.htm">Accessing and Saving Data</a> &gt; <a href="importing_and_exporting_data.htm">Importing and Exporting Data</a> &gt; Exporting Data Sets</p>
+<p>&nbsp;</p>
+<p>Tabular IQ enables you to export data files locally or directly to an external database system (assuming you have write privileges granted by your database administrator). &nbsp;To begin an export process, select Export from the File menu. &nbsp;An Export dialog will appear:</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="export_dialog.png" width="405" height="360" border="0" alt="export_dialog" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>In the top section of the dialog are various types of exports you can perform. &nbsp;For instance, if you wish to export tables as CSV files, you would do this by selecting the File tab and then selecting the export type "text-delimited files" from the drop-down menu. &nbsp;If you wanted to export to your SQL Server database, you would select the SQL Server tab, etc. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Exporting Tables Locally Using Different File Types</span></p>
+<p>&nbsp;</p>
+<p>When you select the File tab at the top of the Export dialog, you should first choose what type of file you want to export. &nbsp;You can select:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Text-delimited Files (CSV, TSV, etc.)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Fixed-Length Files (TXT)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Microsoft FoxPro/XBase Files (DBF)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Microsoft Access Files (MBD)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Microsoft Excel Files (XLS)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets">Package Files (KPG)</span></td></tr></table></div><p>&nbsp;</p>
+<p>For text-delimited, fixed-length and DBF types, you then need to select the Folder on your computer where you want the files exported. &nbsp;Then, for text-delimited types, you'll need to set your delimiter and qualifier prior to export:</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="export_dialog_delimited.png" width="405" height="360" border="0" alt="export_dialog_delimited" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>On the left, select your delimiter. &nbsp;If you have a custom delimiter, such as pipe-delimited or semi-colon delimited, select the Other option and enter in your delimiter. &nbsp;Similarly, select the appropriate text qualifier and whether you'd like to export field names with your file as the first row. &nbsp;Once the delimiters are selected, click the Next button to proceed. </p>
+<p>&nbsp;</p>
+<p>For MDB, XLS and KPG, you need to select a file name and path for the exported files (since, unlike single text files, these three formats can contain multiple tables per individual file). &nbsp;Once you select these options, click the Next button.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="export_dialog_all.png" width="405" height="368" border="0" alt="export_dialog_all" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>This screen is the same for all file types. &nbsp;It enables you to select the tables you wish to export. &nbsp;Simply drag the files from the project panel into this dialog to ready them for export. &nbsp;There are three settings on the screen:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Source Name:</span><span class="f_Bullets"> This is the original name of the tables in the project panel to be exported. These names cannot be edited.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Destination Name:</span><span class="f_Bullets"> This is the place where you can rename your tables for export. &nbsp;To edit, double-click on the destination name to bring up the edit cursor.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Append:</span><span class="f_Bullets"> &nbsp;If you'd like to append a data file to an existing table, you can check the Append box next to that file. &nbsp;Data is appended to an existing table only if both the "Export to" folder (from the previous screen) and the "Destination Name" of the file to be exported is the same as the existing table. &nbsp;The append follows the same rules as when you <a href="appending_records_to_a_table.htm">append records to a table</a>.</span></td></tr></table></div><p>&nbsp;</p>
+<p>As an example of appending files during an export, let's say that you had three CSV files (each having the same structure) named CSV1, CSV2 and CSV3, respectively, that you wanted to add to an existing table called MAIN on your local hard drive. &nbsp;On the first page of the Export, you would select the path and/or filename of the file you wish to append to. &nbsp;Then, you would select each of the files, change each of their destination names to "MAIN" and check the Append checkbox.</p>
+<p>&nbsp;</p>
+<p>Once you have configured your export options, press the Finish button and the files will be exported to the path you chose in the previous page.</p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;For export to Microsoft Excel and Access, at this time, </span>Tabular IQ<span class="f_Note"> can only export as XLS and MDB files, respectively. &nbsp;If these legacy Microsoft and Access formats are not suitable, we recommend exporting as a comma-delimited (CSV) text file.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Exporting Tables to External Database Systems</span></p>
+<p>&nbsp;</p>
+<p>You may also export tables directly to external database systems, such as MySQL Enterprise, Microsoft SQL Server, Oracle, and IBM DB2. &nbsp;You may also export to other systems using an ODBC driver (assuming, of course, you have the proper write permissions). &nbsp;To export to an external system, select the appropriate tab on top of the Export dialog and you will get a connection page.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="export_database.png" width="405" height="368" border="0" alt="export_database" style="margin:0 auto;margin:0px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>To connect to the database, enter the connection information and then click the Next button. &nbsp;The required connection information is as follows:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Server:</span><span class="f_Bullets"> Enter the name of your server. This can be entered as an IP address (e.g., 12.123.12.123) or as a domain name (e.g., hostname.domain.ext)</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Database:</span><span class="f_Bullets"> Enter the name of the database within the system.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Port Number:</span><span class="f_Bullets"> Enter the port number.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">User Name:</span><span class="f_Bullets"> Enter in your login name, if any.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 48px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;"><tr style="vertical-align:baseline" valign="baseline"><td width="13"><span style="font-size: 10pt; font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; color: #444444;">&#8226;</span></td><td><span class="f_Bullets" style="font-weight: bold;">Password:</span><span class="f_Bullets"> Enter your password, if any.</span></td></tr></table></div><p>&nbsp;</p>
+<p>If a connection is made, you will be taken to the Export settings page as discussed above.</p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: &nbsp;The option to export to MySQL, Oracle, SQL Server, DB2 and other database systems may first require the installation of appropriate database drivers. &nbsp;For example, you may need to download and install the MySQL Connector/ODBC driver for MySQL or the Oracle Call Interface (OCI) driver for Oracle. Please contact your system administrator for further information. &nbsp;Third-party drivers are in no way affiliated with </span>Tabular IQ<span class="f_Note"> or its licensing agreement. &nbsp;Please contact the third-party providers of these drivers for further information on licensing and usage terms.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

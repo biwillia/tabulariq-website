@@ -1,0 +1,432 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Using Formulas to Create Calculations</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="calculated fields,formulas,nested calculations" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Using_Formulas_to_Create_Calcu" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?using_formulas_to_create_calcu.htm"; }
+  else { parent.quicksync('a5.9.3'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Using Formulas to Create Calculations</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="defining_the_contents_of_a_cal.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="grouping_and_summarizing_data.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="performing_standard_data_opera.htm">Performing Standard Data Operations</a> &gt; <a href="creating_calculations.htm">Creating Calculations</a> &gt; Using Formulas to Create Calculations</p>
+<p>&nbsp;</p>
+<p>Calculated fields require formulas in order to actually create calculations. &nbsp;This section will provide an overview of using formulas within calculated fields.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Formula Basics</span></p>
+<p>&nbsp;</p>
+<p>A calculated field can be used to create calculations independent of any existing data. &nbsp;For example, you may want to simply multiply two numbers together. &nbsp;You could enter in the following formula:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">20&nbsp;*&nbsp;5</span></p>
+<p>&nbsp;</p>
+<p>This will produce a result of "100" for each record in your calculated field. &nbsp;Similarly, you could add together two pieces of text such as:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">"Ex"&nbsp;+&nbsp;"ample"</span></p>
+<p>&nbsp;</p>
+<p>This will produce a result of "Example" for each record of your calculated field. &nbsp;Or, you could create a Boolean expression (true or false logical condition):</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">3&nbsp;&gt;&nbsp;1</span></p>
+<p>&nbsp;</p>
+<p>This will produce a result of "T" for each record of your calculated field, since this formula is True.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Using Functions</span></p>
+<p>&nbsp;</p>
+<p>Of course, calculated fields are far more powerful when you can add functions to perform more interesting tasks than simple mathematics. &nbsp;For example, you may want to take a word and make it completely uppercase, such as:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">upper("example")</span></p>
+<p>&nbsp;</p>
+<p>This will produce a result of "EXAMPLE" for each record in your calculated field. &nbsp;Or, if you wanted to find out the result of 3 to the 2nd power:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">power(3,2)</span></p>
+<p>&nbsp;</p>
+<p>This will produce a result of "9" for each record in your calculated field.</p>
+<p>&nbsp;</p>
+<p><a href="functions_used_in_formulas.htm">Click here for a full list of available functions.</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Referencing Existing Data</span></p>
+<p>&nbsp;</p>
+<p>The examples above showed how you can create calculations based on fixed numbers and characters. &nbsp;However, the true power of calculated fields become apparent when, instead of entering in fixed values, you actually reference values from other data fields. &nbsp;For example, the following table shows a set of customers with the company name, invoice amount and discount terms:</p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Company</span></p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Amount</span></p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Discount</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>ABC INC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">100</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.01</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">2000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>ABC INC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">400</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.05</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>RST LLC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">50</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.05</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">1000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">5000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>I may want to create a calculated field that calculates the total discount they will receive:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Amount&nbsp;*&nbsp;Discount</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Company</span></p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Amount</span></p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Discount</span></p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Calc_field</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>ABC INC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">100</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.01</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">1.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">2000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">40.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>ABC INC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">400</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.05</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">20.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>RST LLC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">50</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.05</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">2.50</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">1000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">20.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">5000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">100.00</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Or, I could use a function to provide me with specific information I am looking for. &nbsp;Maybe in this case, discounts are not valid if they are less than $1,000, so in order to only see valid discounts we would use this formula (using the <a href="iif.htm">IIF()</a> function):</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">iif(Amount&nbsp;&gt;=&nbsp;1000,&nbsp;(Amount&nbsp;*&nbsp;Discount),&nbsp;0)</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Company</span></p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Amount</span></p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Discount</span></p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Calc_field</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>ABC INC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">100</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.01</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">0.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">2000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">40.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>ABC INC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">400</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.05</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">0.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>RST LLC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">50</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.05</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">0.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">1000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">20.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">5000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">100.00</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Referencing (Nesting) Calculations</span></p>
+<p>&nbsp;</p>
+<p>Because calculated field act just like standard fields, they can be referenced in other calculated fields as well. &nbsp;This can be quite helpful in building up calculations in a step by step manner by just creating new calculated fields each step of the way. &nbsp;The alternative is to build the entire complicated formula in a single calculated field, which may prove more prone to error. &nbsp;So, in the previous example, we had a calculated field called "Calc_field" that showed valid discounts. &nbsp;If we wanted to determine our net receipts, we could create a second calculated field based upon that first calculated field:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Amount&nbsp;-&nbsp;Calc_field</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Company</span></p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Amount</span></p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Discount</span></p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Calc_field</span></p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p><span style="font-weight: bold;">Calc_field2</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>ABC INC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">100</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.01</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">0.00</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">100.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">2000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">40.00</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">1960.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>ABC INC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">400</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.05</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">0.00</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">400.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>RST LLC</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">50</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.05</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">0.00</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">50.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">1000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">20.00</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">980.00</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="116" style="width:116px; border: solid 1px #000000;"><p>XYZ CORP</p>
+</td>
+<td valign="top" width="75" style="width:75px; border: solid 1px #000000;"><p style="text-align: right;">5000</p>
+</td>
+<td valign="top" width="77" style="width:77px; border: solid 1px #000000;"><p style="text-align: right;">0.02</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">100.00</p>
+</td>
+<td valign="top" width="84" style="width:84px; border: solid 1px #000000;"><p style="text-align: right;">4900.00</p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>Of course, there are always multiple ways to get to the correct result. &nbsp;For example, we could have used any of these equivalent formulas in the beginning of this exercise to get the same result:</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">Amount&nbsp;-&nbsp;(iif(Amount&nbsp;&gt;=&nbsp;1000,&nbsp;(Amount&nbsp;*&nbsp;Discount),&nbsp;0))</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">iif(Amount&nbsp;&gt;=&nbsp;1000,&nbsp;(Amount&nbsp;-&nbsp;(Amount&nbsp;*&nbsp;Discount)),&nbsp;Amount)</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">iif(Amount&nbsp;&gt;=&nbsp;1000,&nbsp;Amount&nbsp;*&nbsp;(1&nbsp;-&nbsp;Discount),&nbsp;Amount)</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Learn More</span></p>
+<p>&nbsp;</p>
+<p>For further information about using formulas, click on the following links:</p>
+<p>&nbsp;</p>
+<p class="p_Bullets"><span class="f_Bullets"><a href="working_with_formulas.htm">Working with Formulas</a></span></p>
+<p class="p_Bullets"><span class="f_Bullets"><a href="types_of_formulas.htm">Types of Formulas</a></span></p>
+<p class="p_Bullets"><span class="f_Bullets"><a href="rules_for_creating_formulas.htm">Rules for Creating Formulas</a></span></p>
+<p class="p_Bullets"><span class="f_Bullets"><a href="using_the_formula_builder.htm">Using the Formula Builder</a></span></p>
+<p class="p_Bullets"><span class="f_Bullets"><a href="functions_used_in_formulas.htm">Functions Used in Formulas</a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>

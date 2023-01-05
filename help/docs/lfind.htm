@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Lfind()</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="lfind(),functions,functions lfind()" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <meta name="id" content="Lfind" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+a { color: #2766AD; text-decoration: underline; }
+a:visited {color: #7DA3CE; }
+a:hover {text-decoration: none; }
+</style>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?lfind.htm"; }
+  else { parent.quicksync('a11.4.5.6'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" style="background-color: <%TOPIC_HEADER_BGCOLOR%; background-image: url(header_gradient.png); background-repeat: repeat-x;">
+  <tr valign="middle">
+    <td align="left">
+      <p class="p_Heading1"><span class="f_Heading1">Lfind()</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="strata_welcome.htm"><img src="icon_home_16.gif" border=0 alt="Home" title="Home"></a>&nbsp;&nbsp;
+     <a href="length.htm"><img src="icon_back_arrow_16.gif" border=0 alt="Back" title="Back"></a>&nbsp;&nbsp;
+     <a href="lower.htm"><img src="icon_forward_arrow_16.gif" border=0 alt="Next" title="Next"></a>&nbsp;&nbsp;
+     </span>
+    </td>
+  </tr>
+</table>
+
+   
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p style="font-size: 8pt; margin-bottom: 15px">
+<a href="working_with_formulas.htm">Working with Formulas</a> &gt; <a href="functions_used_in_formulas.htm">Functions Used in Formulas</a> &gt; <a href="text_functions.htm">Text Functions</a> &gt; Lfind()</p>
+<p>&nbsp;</p>
+<p>LFIND() searches for the search string in the other string. LFIND() returns the character index of the nth occurrence of the search string in the other string, starting from the left side of the string. If no occurrence number is specified, LFIND() returns the first occurrence, starting from the left side of the string. If the search string cannot be found or the occurrence number listed runs past the end of the input string, LFIND() returns zero. </p>
+<p>&nbsp;</p>
+<p class="p_Note"><span class="f_Note">NOTE: LFIND() is an alias for INSTR() </span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Function Format</span> </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">LFIND(string,&nbsp;search&nbsp;string&nbsp;[,&nbsp;occurrence])&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Return Value</span> </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">LFIND()&nbsp;returns&nbsp;an&nbsp;integer</span>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p_Heading3" style="border-top: none; border-right: none; border-left: none;"><span class="f_Heading3">Examples</span> </p>
+<p>&nbsp;</p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">LFIND("Green&nbsp;apples&nbsp;taste&nbsp;better&nbsp;than&nbsp;red&nbsp;apples&nbsp;and&nbsp;all&nbsp;other&nbsp;types&nbsp;of&nbsp;apples.",&nbsp;"apples")&nbsp;=&nbsp;7&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">LFIND("Green&nbsp;apples&nbsp;taste&nbsp;better&nbsp;than&nbsp;red&nbsp;apples&nbsp;and&nbsp;all&nbsp;other&nbsp;types&nbsp;of&nbsp;apples.",&nbsp;"oranges")&nbsp;=&nbsp;0&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">LFIND("Green&nbsp;apples&nbsp;taste&nbsp;better&nbsp;than&nbsp;red&nbsp;apples&nbsp;and&nbsp;all&nbsp;other&nbsp;types&nbsp;of&nbsp;apples.",&nbsp;"apples",&nbsp;1)&nbsp;=&nbsp;7&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">LFIND("Green&nbsp;apples&nbsp;taste&nbsp;better&nbsp;than&nbsp;red&nbsp;apples&nbsp;and&nbsp;all&nbsp;other&nbsp;types&nbsp;of&nbsp;apples.",&nbsp;"apples",&nbsp;2)&nbsp;=&nbsp;36&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">LFIND("Green&nbsp;apples&nbsp;taste&nbsp;better&nbsp;than&nbsp;red&nbsp;apples&nbsp;and&nbsp;all&nbsp;other&nbsp;types&nbsp;of&nbsp;apples.",&nbsp;"apples",&nbsp;3)&nbsp;=&nbsp;66&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">&nbsp;</span></p>
+<p class="p_CodeExample2"><span class="f_CodeExample2">LFIND("Green&nbsp;apples&nbsp;taste&nbsp;better&nbsp;than&nbsp;red&nbsp;apples&nbsp;and&nbsp;all&nbsp;other&nbsp;types&nbsp;of&nbsp;apples.",&nbsp;"apples",&nbsp;4)&nbsp;=&nbsp;0</span></p>
+
+</td></tr></table>
+  <!-- Turn off when compiling anything but browser-based help (for the web) -->      
+ 
+     <!--   --> 
+
+</body>
+</html>
