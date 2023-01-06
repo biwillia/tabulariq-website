@@ -8369,6 +8369,7 @@ ul.custom-list1 li span {
 }
 .home-page-title {
     padding-top: 400px;
+    background-size: contain;
 }
 .page-title .content-box {
     display: flex;
